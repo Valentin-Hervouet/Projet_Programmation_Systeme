@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xsAYM0NRE9BzB8wJ3tI7+nqeeepiRbv6noHQtmUtRROCrlKSJslFAVlBhzIiSJZTgZhe9wFlh6aeOaLjNJ6zYw==",
+  "dgSpecHash": "DtT2PEa4OA/xec24Ic4ziYYrPS2uoALhceapSGCFkwmYqO0+vwjQoyq/S6EcIGGLWTfj0UK/qJr45qva0iFanQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\lolah\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512",
-    "C:\\Users\\lolah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/EasySaveVersion1.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
