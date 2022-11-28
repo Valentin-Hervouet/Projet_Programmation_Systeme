@@ -1,5 +1,6 @@
 ﻿using System;
 using EasySaveVersion1.Controller;
+using EasySaveVersion1.View;
 
 namespace EasySaveVersion1
 {
@@ -7,7 +8,8 @@ namespace EasySaveVersion1
     {
         static void Main(string[] args)
         {
-            Controller.Controller Controller = new Controller.Controller();
+            String[] Input = args;
+            //Controller.Controller Controller = new Controller.Controller(Input);
 
             return;
         }
