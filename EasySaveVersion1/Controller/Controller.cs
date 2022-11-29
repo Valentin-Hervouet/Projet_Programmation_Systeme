@@ -1,84 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text;
 using EasySaveVersion1.View;
+
+
 
 namespace EasySaveVersion1.Controller
 {
     public class Controller
     {
-
+        private string[] returndata;
 
         public Controller()
         {
             View.console consoleUI = new View.console();
 
-            string returndata = "";
-            
-            while (returndata != "exit")
+            List<String> returndata = new List<string>();
+
+            returndata.Add("");
+
+            while (returndata[0] != "exit")
             {
 
                 returndata = consoleUI.shell();
-                /*
-                if (returndata == "createsave")
+
+                // creatsave
+                if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
-                    foreach (string arg in args)
-                    {
-                        if (arg == "createsave")
-                        {
-                            // call the constructor of the CreateSave class
+                    // call the class createsave and use the others inputs as parameters
+                    Model.CreateSave save = new Model.CreateSave();
+                    save.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+                }
 
-                        }
-                        String Source = arg;
-                        String Target;
-                        if (Source == arg)
-                        {
-                            Target = arg;
-                        }
-                    }
-                    foreach (string arg in args)
-                    {
-                        Console.WriteLine(arg);
-                    }
-                }*/
-                
-                /*switch (returndata)
+                // save
+                if (returndata[0] == "save" && returndata.Count == 2)
                 {
-                    case "createsave": 
-                        
-                        // call the class createsave and use the others inputs as parameters
-                        break;
 
-                    case "help":
-                        //call the help() method in the console class
-                        //Console.Write(consoleUI.help());
-                        break;
+                }
+                // saveall
+                if (returndata[0] == "saveall" && returndata.Count == 1)
+                {
 
-                    case "save": //parsing here
-                        // call the saving() method in the saving class and use the others inputs as parameters of the method
-                        break;
-                    case "logdaily":
-                        // call the logdaily class and return all the daily logs
-                        break;
+                }
+                // logdaily
+                if (returndata[0] == "logdaily" && returndata.Count == 1)
+                {
 
-                    case "logcurrent":
-                        //call the statelog class and return the state log
-                        break;
+                }
+                // logstate
+                if (returndata[0] == "logstate" && returndata.Count == 1)
+                {
 
-                    case "exit":
-                        // call the exit() method of the console class
-                        break;
-
-                    default:
-                        Console.Write($"No Command found named {returndata}\n");
-                        break;
-                }*/
-
+                }
             }
-
         }
-
-
-
-        }
+    }
 }
+

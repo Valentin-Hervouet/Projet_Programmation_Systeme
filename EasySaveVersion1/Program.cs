@@ -7,9 +7,9 @@ namespace EasySaveVersion1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            String[] Input = args;
+
             Controller.Controller Controller = new Controller.Controller();
 
             return;

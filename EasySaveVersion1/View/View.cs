@@ -1,14 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+<<<<<<< HEAD
 using System.IO;
+=======
+using System.Linq;
+using System.Collections;
+>>>>>>> a0b9122 (Modification Controller View and CreateSave)
 
 namespace EasySaveVersion1.View
 {
     public class console
     {
-        private string cmd;
+        private List<string> cmd;
         private bool message = true;
+        
         private string welcomemessage = @"
      _____                _____                  
     |  ___|              /  ___|                 
@@ -20,28 +26,45 @@ namespace EasySaveVersion1.View
                     |___/ ";
 
 
+        public void Setcmd() {
+            string[] data = Console.ReadLine().Split(' ');
+            this.cmd = new List<string>(data);
+        }
 
-        public string shell()
+        public void Setcmdlist(List<string> data)
+        {
+            this.cmd = data;
+        }
+
+        public List<string> Getcmd() {
+            return this.cmd;
+        }
+
+
+        public List<string> shell()
         {
             if (this.message == true)
             {
                 Console.WriteLine(this.welcomemessage);
                 this.message = false;
             }
-            getcmdfromuser();
-            return allcmd();
 
+            // ask user for command to put in attribut
+            Setcmd();
+
+            // check command in attribut to see if it match a know command
+            allcmd();
+
+            // return this command to controller
+            return Getcmd();
         }
 
 
-        private void getcmdfromuser()
-        {
-            this.cmd = Console.ReadLine();
-        }
+        
 
-        private string allcmd()
+        private void allcmd()
         {
-            switch (this.cmd)
+            switch (this.cmd[0])
             {
                 case "help":
                     Console.Write(help());
@@ -49,27 +72,37 @@ namespace EasySaveVersion1.View
 
                 case "createsave":
                     Console.Write(createsave());
-                    return "createsave";
+                    Setcmdlist(this.cmd);
+                    break;
 
                 case "save":
                     Console.Write(save());
-                    return "save";
+                    Setcmdlist(this.cmd);
+                    return;
+
+                case "saveall":
+                    Console.Write(saveall());
+                    Setcmdlist(this.cmd);
+                    return;
 
                 case "logdaily":
-                    return "logdaily";
+                    Setcmdlist(this.cmd);
+                    return;
 
                 case "logcurrent":
-                    return "logcurrent";
+                    Setcmdlist(this.cmd);
+                    return;
 
                 case "exit":
                     Console.Write(exit());
-                    return "exit";
+                    Setcmdlist(this.cmd);
+                    return;
 
                 default:
                     Console.Write($"No Command found named {this.cmd}\n");
                     break;
             }
-            return "";
+            return;
         }
 
 
@@ -88,6 +121,10 @@ namespace EasySaveVersion1.View
             return "\nUsage: save name\n";
         }
 
+        private string saveall()
+        {
+            return "\nUsage: saveall\n";
+        }
 
         private string exit()
         {
