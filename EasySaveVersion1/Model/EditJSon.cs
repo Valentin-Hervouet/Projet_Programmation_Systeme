@@ -8,16 +8,14 @@ namespace EasySaveVersion1.Model
     {
         protected String DefaultPath;
 
-        #region methods
-        void ReadJson()
+        public void ReadJSON()
         {
-
+            //Here is where you can ask which logfile you want to see then you print it (or open the file ?)
         }
-
-        void WriteJson()
+        public void WriteJSON()
         {
-
+            //Here is where you write in the State log if you created a save or if you execute a file
+            //You write in the Daily log if you finished to execute a save.
         }
-        #endregion
     }
 }
