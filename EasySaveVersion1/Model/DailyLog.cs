@@ -77,6 +77,7 @@ namespace EasySaveVersion1.Model
             }
             return instance;
         }
+<<<<<<< HEAD
 
         public void WriteJSON()
         {
@@ -135,5 +136,14 @@ namespace EasySaveVersion1.Model
             
         }
         #endregion
+=======
+        public Boolean ReadDailLog() {
+            // Output
+            // True or False
+
+            return true;
+        }
+
+>>>>>>> 6f494d1 (modification controller et signature des classes)
     }
 }
