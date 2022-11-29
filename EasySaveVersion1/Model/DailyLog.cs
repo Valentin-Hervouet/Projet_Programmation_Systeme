@@ -11,7 +11,7 @@ namespace EasySaveVersion1.Model
         {
 
         }
-        public DailyLog getInstance()
+        public DailyLog GetInstance()
         {
             if (instance == null)
             {

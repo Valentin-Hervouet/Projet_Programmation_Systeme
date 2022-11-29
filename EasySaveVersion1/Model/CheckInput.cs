@@ -6,18 +6,19 @@ namespace EasySaveVersion1.Model
 {
     class CheckInput
     {
-        #region methods
-        public int CheckPath(string Path)
+        public CheckInput()
         {
-            int ToReturn = 1;
-            return ToReturn;
-        }
 
-        public int CheckNumberSave()
-        {
-            int ToReturn = 1;
-            return ToReturn;
         }
-        #endregion
+        public int CheckPath()
+        {
+            //Return 0 if Path is correct, 1 or something else if Path is not correct
+            return 0;
+        }
+        public int CheckNumberFile()
+        {
+            //Return 0 if Number of File is under 5, 1 or something else if Number of File is 5
+            return 0;
+        }
     }
 }

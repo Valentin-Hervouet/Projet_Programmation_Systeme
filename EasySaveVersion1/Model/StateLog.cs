@@ -11,7 +11,7 @@ namespace EasySaveVersion1.Model
         {
             
         }
-        public StateLog getInstance()
+        public StateLog GetInstance()
         {
             if (instance == null)
             {
