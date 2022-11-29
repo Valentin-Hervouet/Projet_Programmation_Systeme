@@ -35,7 +35,7 @@ namespace EasySaveVersion1.Controller
                 }
 
                 // listsave
-                if (returndata[0] == "save" && returndata.Count == 2)
+                if (returndata[0] == "listsave" && returndata.Count == 2)
                 {
                     Model.Saving save = new Model.Saving();
                     save.Save(returndata[1]);
