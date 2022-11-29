@@ -8,9 +8,16 @@ namespace EasySaveVersion1.Model
     class Saving
     {
         #region methods
-        private void Save( String name)
+        public Boolean Save( String name)
         {
+            // Input
+            // Sava name
 
+
+
+            // Output
+            // True or False 
+            return true;
         }
 
         private void SaveAll()

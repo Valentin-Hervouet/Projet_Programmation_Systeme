@@ -20,5 +20,12 @@ namespace EasySaveVersion1.Model
             }
             return instance;
         }
+        public Boolean ReadDailLog() {
+            // Output
+            // True or False
+
+            return true;
+        }
+
     }
 }
