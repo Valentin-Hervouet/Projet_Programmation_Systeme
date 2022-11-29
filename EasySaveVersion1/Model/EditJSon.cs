@@ -10,6 +10,9 @@ namespace EasySaveVersion1.Model
         protected string DefaultPath;
 
         #region methods
+        /* We can create a class log, so StateLog and DailyLog will inherit this class
+         * And we will write our code (WriteJSON an ReadJSON, they will take a log in args) so we can use thoses class in 
+          the two class.*/
         public void ReadJSON()
         {
             //Here is where you can ask which logfile you want to see then you print it
