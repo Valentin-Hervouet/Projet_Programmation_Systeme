@@ -74,7 +74,7 @@ namespace EasySaveVersion1.Model
             {
                 try
                 {
-                    StreamWriter sw = new StreamWriter("C:\\Dailylog.json", true, Encoding.ASCII);
+                    StreamWriter sw = new StreamWriter("C:\\Dailylog.json", true, Encoding.Unicode);
 
                     //Write things in the ()
                     sw.Write(TextToWrite);
@@ -94,7 +94,7 @@ namespace EasySaveVersion1.Model
             {
                 try
                 {
-                    StreamWriter sw = new StreamWriter("C:\\Statelog.json", true, Encoding.ASCII);
+                    StreamWriter sw = new StreamWriter("C:\\Statelog.json", true, Encoding.Unicode);
 
                     //Write things in the ()
                     sw.Write(TextToWrite);
