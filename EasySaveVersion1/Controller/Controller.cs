@@ -57,9 +57,11 @@ namespace EasySaveVersion1.Controller
                 }
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
-                {/*
+                {
+                    /*
                     Model.DailyLog logdaily = new Model.DailyLog();
-                    logdaily.ReadDailLog();*/
+                    logdaily.ReadDailLog();
+                    */
                 }
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
