@@ -11,7 +11,7 @@ namespace EasySaveVersion1.Model
 
         public void ReadJSON()
         {
-            //Here is where you can ask which logfile you want to see then you print it (or open the file ?)
+            //Here is where you can ask which logfile you want to see then you print it
             Console.WriteLine("Please, specify the Log you want to read.\n State or Daily");
             string StateOrDaily = Console.ReadLine();
             string Line;
@@ -19,7 +19,7 @@ namespace EasySaveVersion1.Model
             {
                 try
                 {
-                    StreamReader sr = new StreamReader("C:\\Statelog.txt");
+                    StreamReader sr = new StreamReader("C:\\Statelog.json");
                     Line = sr.ReadLine();
                     while (Line != null)
                     {
@@ -42,7 +42,7 @@ namespace EasySaveVersion1.Model
             {
                 try
                 {
-                    StreamReader sr = new StreamReader("C:\\Dailylog.txt");
+                    StreamReader sr = new StreamReader("C:\\Dailylog.json");
                     Line = sr.ReadLine();
                     while (Line != null)
                     {
