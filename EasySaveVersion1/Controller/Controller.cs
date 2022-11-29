@@ -9,7 +9,7 @@ namespace EasySaveVersion1.Controller
     {
 
 
-        public Controller()//string[] args)
+        public Controller()
         {
             View.console consoleUI = new View.console();
 
