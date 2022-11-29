@@ -6,13 +6,18 @@ namespace EasySaveVersion1.Model
 {
     class DailyLog
     {
-        #region attributes
-        private String SameSave;
-        private String TimeDate;
-        private String SourceFile;
-        private String TargetFile;
-        private String Size;
-        private int Duration;
-        #endregion
+        private DailyLog instance;
+        private DailyLog()
+        {
+
+        }
+        public DailyLog getInstance()
+        {
+            if (instance == null)
+            {
+                instance = new DailyLog();
+            }
+            return instance;
+        }
     }
 }

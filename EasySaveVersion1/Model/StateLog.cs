@@ -6,14 +6,19 @@ namespace EasySaveVersion1.Model
 {
     class StateLog
     {
-        #region attributes
-        private String NameSave;
-        private String TimeDate;
-        private String State;
-        private int NumberFiles;
-        private double Size;
-        private String SourceFile;
-        private String TargetFile;
-        #endregion
+        private StateLog instance;
+        private StateLog()
+        {
+            
+        }
+        public StateLog getInstance()
+        {
+            if (instance == null)
+            {
+                instance = new StateLog();
+            }
+            return instance;
+        }
+
     }
 }
