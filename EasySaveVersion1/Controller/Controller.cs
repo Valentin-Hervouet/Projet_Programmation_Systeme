@@ -19,26 +19,30 @@ namespace EasySaveVersion1.Controller
 
             List<String> returndata = new List<string>();
 
+            Boolean bol = false;
+
             returndata.Add("");
 
             while (returndata[0] != "exit")
             {
 
-                returndata = consoleUI.shell();
+                returndata = consoleUI.shell(bol);
+
+
 
                 // creatsave
                 if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
                     // call the class createsave and use the others inputs as parameters
                     Model.CreateSave createsave = new Model.CreateSave();
-                    createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+                    bol = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
                 // listsave
                 if (returndata[0] == "listsave" && returndata.Count == 2)
                 {
                     Model.Saving save = new Model.Saving();
-                    save.Save(returndata[1]);
+                    bol = save.Save(returndata[1]);
 
                 }
 
@@ -46,7 +50,7 @@ namespace EasySaveVersion1.Controller
                 if (returndata[0] == "save" && returndata.Count == 2)
                 {
                     Model.Saving save = new Model.Saving();
-                    save.Save(returndata[1]);
+                    bol = save.Save(returndata[1]);
 
                 }
                 // saveall
@@ -68,6 +72,8 @@ namespace EasySaveVersion1.Controller
                 {
 
                 }
+
+
             }
         }
     }
