@@ -80,37 +80,59 @@ namespace EasySaveVersion1.Model
 
         public void WriteJSON()
         {
-            StreamWriter write = new StreamWriter(Path);
+            try
+            {
+                StreamWriter write = new StreamWriter(Path);
 
-            // Write all the infos in the daily log text in a JSON format
-            write.WriteLine("{");
-            write.WriteLine("   'Name': " + this.NameSave);
-            write.WriteLine("   'File Source': " + this.SourceFile);
-            write.WriteLine("   'FileTarget': " + this.TargetFile);
-            write.WriteLine("   'destPath': ''");
-            write.WriteLine("   'FileSize': " + this.Size);
-            write.WriteLine("   'FileTransfertTime': " + this.Duration);
-            write.WriteLine("   'time': " + this.TimeDate);
-            write.WriteLine("}");
-            //Close the file
-            write.Close();
+                // Write all the infos in the daily log text in a JSON format
+                write.WriteLine("{");
+                write.WriteLine("   'Name': " + this.NameSave);
+                write.WriteLine("   'File Source': " + this.SourceFile);
+                write.WriteLine("   'FileTarget': " + this.TargetFile);
+                write.WriteLine("   'destPath': ''");
+                write.WriteLine("   'FileSize': " + this.Size);
+                write.WriteLine("   'FileTransfertTime': " + this.Duration);
+                write.WriteLine("   'time': " + this.TimeDate);
+                write.WriteLine("}");
+                //Close the file
+                write.Close();
 
-            //test
-            Console.WriteLine("If this message print, then my code work");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("End method");
+            }
+           
         }
 
         public void ReadJSON()
         {
-            StreamReader reader = new StreamReader(Path);
-            // Read the lines in the text file
-            String line = reader.ReadLine();
-            while (line != null)
+            try
             {
-                Console.WriteLine(line);
-                line = reader.ReadLine();
+                StreamReader reader = new StreamReader(Path);
+                // Read the lines in the text file
+                String line = reader.ReadLine();
+                while (line != null)
+                {
+                    Console.WriteLine(line);
+                    line = reader.ReadLine();
+                }
+                //Close the file 
+                reader.Close();
             }
-            //Close the file 
-            reader.Close();
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("End Method");
+            }
+            
         }
         #endregion
     }
