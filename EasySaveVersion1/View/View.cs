@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-<<<<<<< HEAD
 using System.IO;
-=======
 using System.Linq;
 using System.Collections;
->>>>>>> a0b9122 (Modification Controller View and CreateSave)
 
 namespace EasySaveVersion1.View
 {
