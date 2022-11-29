@@ -1,0 +1,27 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{6DA8EA69-9FD3-4742-9400-BA30FC49C511}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EasySaveVersion1/Controller/Controller.cs">
+    <Files>
+      <File FileName="EasySaveVersion1/Controller/Controller.cs" Line="36" Column="1" />
+      <File FileName="EasySaveVersion1/Model/CreateSave.cs" Line="25" Column="91" />
+      <File FileName="EasySaveVersion1/View/View.cs" Line="73" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EasySaveVersion1" expanded="True">
+            <Node name="EasySaveVersion1" expanded="True">
+              <Node name="Controller" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="View" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.EasySaveVersion1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
