@@ -97,6 +97,8 @@ namespace EasySaveVersion1.Model
         {
             TargetFile = input;
         }
+
+        //Methods
         public string ReadStateLog()
         {
             Boolean succes = false;
