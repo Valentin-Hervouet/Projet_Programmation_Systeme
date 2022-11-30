@@ -7,7 +7,7 @@ namespace EasySaveVersion1.Model
 {
     class StateLog : EditJSon
     {
-        private StateLog instance;
+        private static StateLog instance;
         private string NameSave;
         private string TimeDate;
         private string State;
@@ -21,7 +21,7 @@ namespace EasySaveVersion1.Model
         {
             
         }
-        public StateLog GetInstance()
+        public static StateLog GetInstance()
         {
             if (instance == null)
             {
