@@ -16,7 +16,7 @@ namespace EasySaveVersion1.Model
         private String TargetFile;
         private double Size;
         private int Duration;
-        private DailyLog instance;
+        private static DailyLog instance;
         private const String Path = "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\DailyLog.json";
         //This is a temporary file that I use to work, we will change it when we will finish all
         #endregion
@@ -71,7 +71,7 @@ namespace EasySaveVersion1.Model
             return Duration;
         }
 
-        public DailyLog GetInstance()
+        public static DailyLog GetInstance()
         {
             if (instance == null)
             {

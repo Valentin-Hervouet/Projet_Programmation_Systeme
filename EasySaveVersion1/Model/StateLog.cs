@@ -101,14 +101,14 @@ namespace EasySaveVersion1.Model
         //Methods
         public string ReadStateLog()
         {
-            Boolean succes = false;
+            Boolean succes = true;
             string Line;
 
             if (succes == true)
             {
                 try
                 {
-                    StreamReader sr = new StreamReader("C:\\Statelog.json");
+                    StreamReader sr = new StreamReader("C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\StateLog.json");
                     Line = sr.ReadLine();
                     while (Line != null)
                     {
