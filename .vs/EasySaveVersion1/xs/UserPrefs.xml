@@ -1,14 +1,17 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{6DA8EA69-9FD3-4742-9400-BA30FC49C511}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EasySaveVersion1/Controller/Controller.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.EasySaveVersion1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EasySaveVersion1/View/View.cs">
     <Files>
-      <File FileName="EasySaveVersion1/Model/CreateSave.cs" Line="29" Column="1" />
-      <File FileName="EasySaveVersion1/View/View.cs" Line="70" Column="33" />
-      <File FileName="EasySaveVersion1/Model/Saving.cs" Line="18" Column="22" />
-      <File FileName="EasySaveVersion1/Program.cs" Line="1" Column="1" />
-      <File FileName="EasySaveVersion1/Model/listsave.cs" Line="6" Column="19" />
-      <File FileName="EasySaveVersion1/Controller/Controller.cs" Line="33" Column="74" />
-      <File FileName="EasySaveVersion1/Model/SaveAll.cs" Line="6" Column="23" />
-      <File FileName="EasySaveVersion1/Model/DailyLog.cs" Line="23" Column="35" />
+      <File FileName="EasySaveVersion1/Controller/Controller.cs" Line="31" Column="1" />
+      <File FileName="EasySaveVersion1/Model/CreateSave.cs" Line="25" Column="1" />
+      <File FileName="EasySaveVersion1/Model/Saving.cs" Line="20" Column="25" />
+      <File FileName="EasySaveVersion1/View/View.cs" Line="38" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,11 +27,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.EasySaveVersion1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
 </Properties>
