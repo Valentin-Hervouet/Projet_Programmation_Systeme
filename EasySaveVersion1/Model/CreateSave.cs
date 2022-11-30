@@ -23,7 +23,14 @@ namespace EasySaveVersion1.Model
         public string Type { get; set; }
 
         public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave) {
-            
+
+
+            Model.CheckInput InputPath = new Model.CheckInput();
+
+            string message;
+            message = InputPath.CheckPath(SourceFile);
+
+
             Boolean succes = true;
 
             if (succes == true)

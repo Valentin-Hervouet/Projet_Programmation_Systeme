@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace EasySaveVersion1.Model
 {
@@ -11,10 +13,19 @@ namespace EasySaveVersion1.Model
         {
 
         }
-        public int CheckPath()
+        public string CheckPath(string SourceFile)
         {
             //Return 0 if Path is correct, 1 or something else if Path is not correct
-            return 0;
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true";
+            }
+            else
+            {
+                return "error";
+            }
         }
         public int CheckNumberFile()
         {
