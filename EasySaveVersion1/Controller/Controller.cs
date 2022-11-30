@@ -60,8 +60,8 @@ namespace EasySaveVersion1.Controller
                 // saveall
                 if (returndata[0] == "saveall" && returndata.Count == 1)
                 {
-                    Model.SaveAll saveall = new Model.SaveAll();
-                    databackformmodel = saveall.saveall();
+                    Model.Saving saveall = new Model.Saving();
+                    databackformmodel = saveall.SaveAll();
                 }
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)

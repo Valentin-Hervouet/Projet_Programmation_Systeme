@@ -29,10 +29,29 @@ namespace EasySaveVersion1.Model
 
         }
 
-        private void SaveAll()
+
+        public string SaveAll()
         {
+            // Input
+            // Sava name
+
+            // Output
+            // True or False
+
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true ";
+            }
+            else
+            {
+                return "error";
+            }
 
         }
+
+        
         #endregion
     }
 }

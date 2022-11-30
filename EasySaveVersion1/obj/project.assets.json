@@ -8,45 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-<<<<<<< Updated upstream
-    "C:\\Users\\lolah\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\fclea\\.nuget\\packages\\": {}
->>>>>>> Stashed changes
+    "/Users/emilienpuech/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+      "projectUniqueName": "/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/EasySaveVersion1.csproj",
       "projectName": "EasySaveVersion1",
-      "projectPath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
-      "packagesPath": "C:\\Users\\lolah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
-      "projectName": "EasySaveVersion1",
-      "projectPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
-      "packagesPath": "C:\\Users\\fclea\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
->>>>>>> Stashed changes
+      "projectPath": "/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/EasySaveVersion1.csproj",
+      "packagesPath": "/Users/emilienpuech/.nuget/packages/",
+      "outputPath": "/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< Updated upstream
-        "C:\\Users\\lolah\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\fclea\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/emilienpuech/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -75,26 +55,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.30, 3.1.30]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -103,7 +69,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file /Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
