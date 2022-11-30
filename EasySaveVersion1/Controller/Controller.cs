@@ -77,6 +77,7 @@ namespace EasySaveVersion1.Controller
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {
                     /*
                     Model.DailyLog logdaily = new Model.DailyLog();
@@ -87,6 +88,13 @@ namespace EasySaveVersion1.Controller
                     Model.DailyLog logdaily = new Model.DailyLog();
                     logdaily.ReadDailLog();*/
 >>>>>>> d6ebf7a80f652cd7b0d2c2231f3af2de416bd021
+=======
+                {
+                    /*
+                    Model.DailyLog logdaily = new Model.DailyLog();
+                    logdaily.ReadDailLog();
+                    */
+>>>>>>> 808fd47 (modification controller)
                 }
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
