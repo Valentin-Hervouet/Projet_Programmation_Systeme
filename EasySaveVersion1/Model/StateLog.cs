@@ -11,10 +11,13 @@ namespace EasySaveVersion1.Model
         private string NameSave;
         private string TimeDate;
         private string State;
-        private int NumberFiles;
-        private double Size;
+        private string NumberFiles;
+        private string Size;
         private string SourceFile;
         private string TargetFile;
+        private const string Path = "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\StateLog.json";
+        //This is a temporary file that I use to work, we will change it when we will finish all
+        public delegate string DelgGet();
 
         //Singleton set up
         private StateLog()
@@ -25,6 +28,7 @@ namespace EasySaveVersion1.Model
         {
             if (instance == null)
             {
+
                 instance = new StateLog();
             }
             return instance;
@@ -47,11 +51,11 @@ namespace EasySaveVersion1.Model
         {
             return State;
         }
-        public int GetNumberFiles()
+        public string GetNumberFiles()
         {
             return NumberFiles;
         }
-        public double GetSize()
+        public string GetSize()
         {
             return Size;
         }
@@ -81,11 +85,11 @@ namespace EasySaveVersion1.Model
         {
             State = input;
         }
-        public void SetNumberFiles(int input)
+        public void SetNumberFiles(string input)
         {
             NumberFiles = input;
         }
-        public void SetSize(double input)
+        public void SetSize(string input)
         {
             Size = input;
         }
@@ -99,6 +103,61 @@ namespace EasySaveVersion1.Model
         }
 
         //Methods
+        public string GetAllAttributes()
+        {
+            DelgGet delgcast = GetDefaultPath;
+            delgcast += GetName;
+            delgcast += GetTime;
+            delgcast += GetState;
+            delgcast += GetNumberFiles;
+            delgcast += GetSize;
+            delgcast += GetTarget;
+            delgcast += GetSource;
+       
+            return delgcast();
+        }
+        public void SetAllAttributes(string Name, string Time, string State, string Number, string Size, string Source, string Target)
+        {
+            NameSave = Name;
+            TimeDate = Time;
+            this.State = State;
+            NumberFiles = Number;
+            this.Size = Size;
+            SourceFile = Source;
+            TargetFile = Target;
+        }
+
+        public void WriteJSON()
+        {
+            try
+            {
+                StreamWriter write = new StreamWriter(Path);
+
+                // Write all the infos in the daily log text in a JSON format
+                write.WriteLine("{");
+                write.WriteLine("   'Name': " + this.NameSave);
+                write.WriteLine("   'Number': " + this.NumberFiles);
+                write.WriteLine("   'State': " + this.State);
+                write.WriteLine("   'File Source': " + this.SourceFile);
+                write.WriteLine("   'FileTarget': " + this.TargetFile);
+                write.WriteLine("   'FileSize': " + this.Size);
+                write.WriteLine("   'FileDate': " + this.TimeDate);
+                write.WriteLine("}");
+                //Close the file
+                write.Close();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("End method");
+            }
+
+        }
+
         public string ReadStateLog()
         {
             Boolean succes = true;
