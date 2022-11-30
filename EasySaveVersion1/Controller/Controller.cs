@@ -66,15 +66,15 @@ namespace EasySaveVersion1.Controller
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
                 {
-                    Model.DailyLog logdaily = new Model.DailyLog();
-                    databackformmodel = logdaily.ReadDailLog();
+                    //Model.DailyLog logdaily = Model.DailyLog.();
+                    //databackformmodel = logdaily.ReadDailLog();
                 }
 
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
                 {
-                    Model.StateLog logstate = new Model.StateLog();
-                    databackformmodel = logstate.ReadStateLog(); 
+                    //Model.StateLog logstate = Model.StateLog.GetInstance();
+                    //databackformmodel = logstate.ReadStateLog(); 
                 }
 
 
