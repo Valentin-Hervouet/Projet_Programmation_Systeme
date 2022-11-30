@@ -97,5 +97,40 @@ namespace EasySaveVersion1.Model
         {
             TargetFile = input;
         }
+        public string ReadStateLog()
+        {
+            Boolean succes = false;
+            string Line;
+
+            if (succes == true)
+            {
+                try
+                {
+                    StreamReader sr = new StreamReader("C:\\Statelog.json");
+                    Line = sr.ReadLine();
+                    while (Line != null)
+                    {
+                        Console.WriteLine(Line);
+                        Line = sr.ReadLine();
+                    }
+                    sr.Close();
+                    Console.ReadLine();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Exception: " + e.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("Executing finally block.");
+                }
+                return "true";
+            }
+            else
+            {
+                return "error";
+            }
+
+        }
     }
 }
