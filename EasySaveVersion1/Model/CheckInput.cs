@@ -24,7 +24,7 @@ namespace EasySaveVersion1.Model
             }
             else
             {
-                return "error";
+                return "error source file not found";
             }
         }
         public int CheckNumberFile()

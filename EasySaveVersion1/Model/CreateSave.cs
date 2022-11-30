@@ -18,24 +18,39 @@ namespace EasySaveVersion1.Model
         // https://learn.microsoft.com/fr-fr/dotnet/csharp/programming-guide/classes-and-structs/using-properties
 
         public string NameOfSave { get; set; }
-        public string Source { get; set; }
+        public string GetSourceFile() {
+            return this.SourceFile;
+        }
+        public SetSourceFile(string SourceFile) {
+
+        }
+
+
         public string Target { get; set; }
         public string Type { get; set; }
 
-        public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave) {
+        public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave)
+        {
 
 
             Model.CheckInput InputPath = new Model.CheckInput();
 
-            string message;
-            message = InputPath.CheckPath(SourceFile);
-
+            string SourceFileCheckPath;
+            SourceFileCheckPath = InputPath.CheckPath(SourceFile);
+            if (SourceFileCheckPath == "true")
+            {
+                set
+            }
+            else
+            {
+                return SourceFileCheckPath;
+            }
 
             Boolean succes = true;
 
             if (succes == true)
             {
-                return "true"+ Name + SourceFile + TargetFile + TypeSave;
+                return "true" + Name + SourceFile + TargetFile + TypeSave;
             }
             else
             {
