@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/emilienpuech/.dotnet/store/|arch|/|tfm|",
-      "/Users/emilienpuech/.nuget/packages"
+      "C:\\Users\\fclea\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\fclea\\.nuget\\packages"
     ]
   }
 }
