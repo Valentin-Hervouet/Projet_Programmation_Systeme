@@ -1,0 +1,14 @@
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1.deps.json
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1.runtimeconfig.json
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1.runtimeconfig.dev.json
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1.dll
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/EasySaveVersion1.pdb
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.csproj.AssemblyReference.cache
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.AssemblyInfoInputs.cache
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.AssemblyInfo.cs
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.csproj.CoreCompileInputs.cache
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.dll
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.pdb
+/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.genruntimeconfig.cache
