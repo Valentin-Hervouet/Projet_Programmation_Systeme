@@ -94,7 +94,7 @@ namespace EasySaveVersion1.Model
 
             if (succes == true)
             {
-                return "true" + Name + SourceFile + TargetFile + TypeSave;
+                return "Savejob saved --> " + Name + " " + SourceFile + " " + TargetFile + " " + TypeSave;
             }
             else
             {

@@ -73,7 +73,8 @@ namespace EasySaveVersion1.Controller
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
                 {
-
+                    Model.StateLog logstate = new Model.StateLog();
+                    databackformmodel = logstate.ReadStateLog(); 
                 }
 
 

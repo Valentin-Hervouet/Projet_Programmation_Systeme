@@ -17,10 +17,7 @@ namespace EasySaveVersion1.Model
         private string TargetFile;
 
         //Singleton set up
-        private StateLog()
-        {
-            
-        }
+        
         public StateLog GetInstance()
         {
             if (instance == null)
