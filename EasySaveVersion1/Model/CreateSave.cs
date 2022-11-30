@@ -22,9 +22,9 @@ namespace EasySaveVersion1.Model
         public string Target { get; set; }
         public string Type { get; set; }
 
-        public bool CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave) {
+        public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave) {
             Console.Write("CreateSaveInLogFile"+ Name + SourceFile + TargetFile + TypeSave);
-            return true;
+            return "succes";
         }
 
 

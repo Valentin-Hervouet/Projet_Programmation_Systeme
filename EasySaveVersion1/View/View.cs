@@ -21,7 +21,6 @@ namespace EasySaveVersion1.View
     \____/\__,_|___/\__, \____/ \__,_| \_/ \___| 
                      __/ |                       
                     |___/ ";
-        private string errormessage = "Error";
 
 
         public void Setcmd() {
@@ -39,16 +38,16 @@ namespace EasySaveVersion1.View
         }
 
 
-        public List<string> shell(Boolean bol)
+        public List<string> shell(string databackformmodel)
         {
             if (this.message == true)
             {
                 Console.WriteLine(this.welcomemessage);
                 this.message = false;
             }
-            if (bol == false) {
-                Console.WriteLine(this.errormessage);
-            }
+            
+                Console.WriteLine(databackformmodel);
+            
 
             // ask user for command to put in attribut
             Setcmd();
