@@ -19,19 +19,33 @@ namespace EasySaveVersion1.Controller
 
             List<String> returndata = new List<string>();
 
+            Boolean bol = false;
+
             returndata.Add("");
 
             while (returndata[0] != "exit")
             {
 
-                returndata = consoleUI.shell();
+                returndata = consoleUI.shell(bol);
+
+
 
                 // creatsave
                 if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
                     // call the class createsave and use the others inputs as parameters
                     Model.CreateSave createsave = new Model.CreateSave();
-                    createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+
+                    bol = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+                }
+
+                // listsave
+                if (returndata[0] == "listsave" && returndata.Count == 2)
+                {
+                    Model.Saving save = new Model.Saving();
+                    bol = save.Save(returndata[1]);
+
+                    //createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
                 // listsave
@@ -46,6 +60,7 @@ namespace EasySaveVersion1.Controller
                 if (returndata[0] == "save" && returndata.Count == 2)
                 {
                     Model.Saving save = new Model.Saving();
+                    bol = save.Save(returndata[1]);
                     save.Save(returndata[1]);
 
                 }
@@ -57,15 +72,24 @@ namespace EasySaveVersion1.Controller
                 }
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
-                {/*
+                {
+                    /*
                     Model.DailyLog logdaily = new Model.DailyLog();
-                    logdaily.ReadDailLog();*/
+                    logdaily.ReadDailLog();
+                    */
+
+
                 }
+
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
                 {
 
                 }
+
+
+
+
             }
         }
     }

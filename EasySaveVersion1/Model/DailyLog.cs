@@ -77,7 +77,7 @@ namespace EasySaveVersion1.Model
             }
             return instance;
         }
-<<<<<<< HEAD
+
 
         public void WriteJSON()
         {
@@ -110,7 +110,9 @@ namespace EasySaveVersion1.Model
            
         }
 
-        public void ReadJSON()
+
+
+        public String ReadJSON()
         {
             try
             {
@@ -119,7 +121,7 @@ namespace EasySaveVersion1.Model
                 String line = reader.ReadLine();
                 while (line != null)
                 {
-                    Console.WriteLine(line);
+                    return line;
                     line = reader.ReadLine();
                 }
                 //Close the file 
@@ -136,7 +138,9 @@ namespace EasySaveVersion1.Model
             
         }
         #endregion
-=======
+
+
+
         public Boolean ReadDailLog() {
             // Output
             // True or False
@@ -144,6 +148,5 @@ namespace EasySaveVersion1.Model
             return true;
         }
 
->>>>>>> 6f494d1 (modification controller et signature des classes)
     }
 }
