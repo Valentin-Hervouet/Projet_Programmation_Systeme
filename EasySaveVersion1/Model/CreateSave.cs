@@ -17,17 +17,45 @@ namespace EasySaveVersion1.Model
         // Notation Get & Save
         // https://learn.microsoft.com/fr-fr/dotnet/csharp/programming-guide/classes-and-structs/using-properties
 
-        public string NameOfSave { get; set; }
-        public string GetSourceFile() {
+        private string GetName()
+        {
+            return this.Name;
+        }
+        private void SetName(string Name)
+        {
+            this.Name = Name;
+        }
+
+        private string GetSourceFile()
+        {
             return this.SourceFile;
         }
-        public SetSourceFile(string SourceFile) {
+        private void SetSourceFile(string SourceFile)
+        {
+            this.SourceFile = SourceFile;
+        }
 
+        private string GetTargetFile()
+        {
+            return this.TargetFile;
+        }
+        private void SetTargetFile(string TargetFile)
+        {
+            this.TargetFile = TargetFile;
+        }
+
+        private string GetTypeSave()
+        {
+            return this.TypeSave;
+        }
+        private void SetTypeSave(string TypeSave)
+        {
+            this.TypeSave = TypeSave;
         }
 
 
-        public string Target { get; set; }
-        public string Type { get; set; }
+
+
 
         public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave)
         {
@@ -35,16 +63,32 @@ namespace EasySaveVersion1.Model
 
             Model.CheckInput InputPath = new Model.CheckInput();
 
-            string SourceFileCheckPath;
-            SourceFileCheckPath = InputPath.CheckPath(SourceFile);
-            if (SourceFileCheckPath == "true")
+            if (InputPath.CheckPath(SourceFile) == "true")
             {
-                set
+                SetName(Name);
+                SetSourceFile(SourceFile);
+                SetTargetFile(TargetFile);
             }
             else
             {
-                return SourceFileCheckPath;
+                return InputPath.CheckPath(SourceFile);
             }
+
+            if (TypeSave == "complet" || TypeSave == "differential")
+            {
+                SetTypeSave(TypeSave);
+            }
+            else
+            {
+                return "error wrong type of save (only complet or differential)";
+            }
+
+
+            // call function to write save in statelog file
+            // input --> (GetName(),GetSourceFile(),GetTargetFile(),GetTypeSave())
+            //
+            // output error message or sucess message
+
 
             Boolean succes = true;
 
@@ -58,6 +102,8 @@ namespace EasySaveVersion1.Model
             }
 
         }
+
+
 
 
     }
