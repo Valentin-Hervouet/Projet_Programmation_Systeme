@@ -114,31 +114,31 @@ namespace EasySaveVersion1.Model
 
 
 
-        public String ReadJSON()
-        {
-            try
-            {
-                StreamReader reader = new StreamReader(Path);
-                // Read the lines in the text file
-                String line = reader.ReadLine();
-                while (line != null)
-                {
-                    return line;
-                    line = reader.ReadLine();
-                }
-                //Close the file 
-                reader.Close();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("End Method");
-            }
+        //public String ReadJSON()
+        //{
+        //    try
+        //    {
+        //        StreamReader reader = new StreamReader(Path);
+        //        // Read the lines in the text file
+        //        String line = reader.ReadLine();
+        //        while (line != null)
+        //        {
+        //            return line;
+        //            line = reader.ReadLine();
+        //        }
+        //        //Close the file 
+        //        reader.Close();
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine("Exception " + e.Message);
+        //    }
+        //    finally
+        //    {
+        //        Console.WriteLine("End Method");
+        //    }
 
-        }
+        //}
         #endregion
 
 
