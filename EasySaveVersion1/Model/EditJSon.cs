@@ -13,10 +13,19 @@ namespace EasySaveVersion1.Model
         /* We can create a class log, so StateLog and DailyLog will inherit this class
          * And we will write our code (WriteJSON an ReadJSON, they will take a log in args) so we can use thoses class in 
           the two class.*/
-        public void ReadJSON()
+        public void ReadJSON(String path)
         {
+            StreamReader Reader = new StreamReader(path);
+            String Line = Reader.ReadLine();
+            while (Line != null)
+            {
+                Console.WriteLine(Line);
+                Line = Reader.ReadLine();
+            }
+            Reader.Close();  
+        }
             //Here is where you can ask which logfile you want to see then you print it
-            Console.WriteLine("Please, specify the Log you want to read.\n State or Daily");
+            /*Console.WriteLine("Please, specify the Log you want to read.\n State or Daily");
             string StateOrDaily = Console.ReadLine();
             string Line;
             if (StateOrDaily == "State" || StateOrDaily == "state" || StateOrDaily == "Statelog" || StateOrDaily == "StateLog" || StateOrDaily == "statelog")
@@ -68,9 +77,9 @@ namespace EasySaveVersion1.Model
             else
             {
                 Console.WriteLine("This is not a word understood by EasySave");
-            }
-        }
-        public void WriteJSON(string StateOrDaily, string TextToWrite)
+            }*/
+        
+        /*public void WriteJSON(string StateOrDaily, string TextToWrite)
         {
             //Here is where you write in the State log if you created a save or if you execute a file
             //You write in the Daily log if you finished to execute a save.
@@ -118,7 +127,7 @@ namespace EasySaveVersion1.Model
             {
                 Console.WriteLine("Something went wrong");
             }
-        }
+        }*/
         #endregion
     }
 }

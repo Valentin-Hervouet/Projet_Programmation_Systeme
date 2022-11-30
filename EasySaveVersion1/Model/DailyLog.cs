@@ -17,7 +17,7 @@ namespace EasySaveVersion1.Model
         private double Size;
         private int Duration;
         private DailyLog instance;
-        private const String Path = "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\DailyLog.txt";
+        private const String Path = "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\DailyLog.json";
         //This is a temporary file that I use to work, we will change it when we will finish all
         #endregion
 
@@ -113,39 +113,11 @@ namespace EasySaveVersion1.Model
         }
 
 
-
-        //public String ReadJSON()
-        //{
-        //    try
-        //    {
-        //        StreamReader reader = new StreamReader(Path);
-        //        // Read the lines in the text file
-        //        String line = reader.ReadLine();
-        //        while (line != null)
-        //        {
-        //            return line;
-        //            line = reader.ReadLine();
-        //        }
-        //        //Close the file 
-        //        reader.Close();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine("Exception " + e.Message);
-        //    }
-        //    finally
-        //    {
-        //        Console.WriteLine("End Method");
-        //    }
-
-        //}
-        #endregion
-
-
-
         public string ReadDailLog()
         {
             Boolean succes = false;
+            ReadJSON(Path);
+            succes = true;
 
             if (succes == true)
             {
@@ -155,6 +127,7 @@ namespace EasySaveVersion1.Model
             }
 
         }
+        #endregion
 
     }
 }
