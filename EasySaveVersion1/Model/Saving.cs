@@ -8,16 +8,25 @@ namespace EasySaveVersion1.Model
     class Saving
     {
         #region methods
-        public Boolean Save( String name)
+        public string Save( String name)
         {
             // Input
             // Sava name
 
-
-
             // Output
-            // True or False 
-            return true;
+            // True or False
+
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true " + name;
+            }
+            else
+            {
+                return "error";
+            }
+
         }
 
         private void SaveAll()

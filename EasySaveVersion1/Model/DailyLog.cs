@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.IO;
+using System.Xml.Linq;
 
 namespace EasySaveVersion1.Model
 {
@@ -22,11 +23,12 @@ namespace EasySaveVersion1.Model
 
         #region methods
         //Constructor
-        private DailyLog()
+        /*
+        private  DailyLog()
         {
-
+            
         }
-
+        */
         //Set
         public void set(String NameSave, String TimeDate, String SourceFile, String TargetFile, double Size, int Duration)
         {
@@ -107,7 +109,7 @@ namespace EasySaveVersion1.Model
             {
                 Console.WriteLine("End method");
             }
-           
+
         }
 
 
@@ -135,17 +137,23 @@ namespace EasySaveVersion1.Model
             {
                 Console.WriteLine("End Method");
             }
-            
+
         }
         #endregion
 
 
 
-        public Boolean ReadDailLog() {
-            // Output
-            // True or False
+        public string ReadDailLog()
+        {
+            Boolean succes = false;
 
-            return true;
+            if (succes == true)
+            {
+                return "true";
+            }else{
+                return "error";
+            }
+
         }
 
     }

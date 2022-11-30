@@ -7,6 +7,7 @@ using EasySaveVersion1.View;
 
 
 
+
 namespace EasySaveVersion1.Controller
 {
     public class Controller
@@ -19,15 +20,15 @@ namespace EasySaveVersion1.Controller
 
             List<String> returndata = new List<string>();
 
-            Boolean bol = false;
+            string databackformmodel = ""; ;
 
             returndata.Add("");
 
             while (returndata[0] != "exit")
             {
 
-                returndata = consoleUI.shell(bol);
-
+                returndata = consoleUI.shell(databackformmodel);
+                databackformmodel = "";
 
 
                 // creatsave
@@ -36,49 +37,37 @@ namespace EasySaveVersion1.Controller
                     // call the class createsave and use the others inputs as parameters
                     Model.CreateSave createsave = new Model.CreateSave();
 
-                    bol = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+                    databackformmodel = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
                 // listsave
-                if (returndata[0] == "listsave" && returndata.Count == 2)
+                if (returndata[0] == "listsave" && returndata.Count == 1)
                 {
-                    Model.Saving save = new Model.Saving();
-                    bol = save.Save(returndata[1]);
-
+                    Model.ListSave save = new Model.ListSave();
+                    databackformmodel = save.listsave();
+                    
+                        
                     //createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
-                }
-
-                // listsave
-                if (returndata[0] == "save" && returndata.Count == 2)
-                {
-                    Model.Saving save = new Model.Saving();
-                    save.Save(returndata[1]);
-
                 }
 
                 // save
                 if (returndata[0] == "save" && returndata.Count == 2)
                 {
                     Model.Saving save = new Model.Saving();
-                    bol = save.Save(returndata[1]);
-                    save.Save(returndata[1]);
+                    databackformmodel = save.Save(returndata[1]);
 
                 }
                 // saveall
                 if (returndata[0] == "saveall" && returndata.Count == 1)
                 {
                     Model.SaveAll saveall = new Model.SaveAll();
-                    saveall.saveall();
+                    databackformmodel = saveall.saveall();
                 }
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
                 {
-                    /*
                     Model.DailyLog logdaily = new Model.DailyLog();
-                    logdaily.ReadDailLog();
-                    */
-
-
+                    databackformmodel = logdaily.ReadDailLog();
                 }
 
                 // logstate

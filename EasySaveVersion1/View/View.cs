@@ -21,7 +21,6 @@ namespace EasySaveVersion1.View
     \____/\__,_|___/\__, \____/ \__,_| \_/ \___| 
                      __/ |                       
                     |___/ ";
-        private string errormessage = "Error";
 
 
         public void Setcmd() {
@@ -39,16 +38,18 @@ namespace EasySaveVersion1.View
         }
 
 
-        public List<string> shell(Boolean bol)
+
+
+        public List<string> shell(string databackformmodel)
         {
             if (this.message == true)
             {
                 Console.WriteLine(this.welcomemessage);
                 this.message = false;
             }
-            if (bol == false) {
-                Console.WriteLine(this.errormessage);
-            }
+            
+                Console.WriteLine(databackformmodel);
+            
 
             // ask user for command to put in attribut
             Setcmd();
@@ -61,7 +62,8 @@ namespace EasySaveVersion1.View
         }
 
 
-        
+
+
 
         private void allcmd()
         {
@@ -86,11 +88,16 @@ namespace EasySaveVersion1.View
                     Setcmdlist(this.cmd);
                     return;
 
+                case "listsave":
+                    Console.Write(listsave());
+                    Setcmdlist(this.cmd);
+                    return;
+
                 case "logdaily":
                     Setcmdlist(this.cmd);
                     return;
 
-                case "logcurrent":
+                case "logstate":
                     Setcmdlist(this.cmd);
                     return;
 
@@ -100,33 +107,35 @@ namespace EasySaveVersion1.View
                     return;
 
                 default:
-                    Console.Write($"No Command found named {this.cmd}\n");
+                    Console.Write($"No Command found named {this.cmd[0]}\n");
                     break;
             }
             return;
         }
 
 
+
+
         private string help()
         {
             return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nlogdaily -- show daily log\nlogstate -- show state log\nexit -- exit program\n";
         }
-
         private string createsave()
         {
             return "\nUsage: createsave name sourcefile destinationfile type( complet || differential )\n";
         }
-
         private string save()
         {
             return "\nUsage: save name\n";
         }
-
         private string saveall()
         {
             return "\nUsage: saveall\n";
         }
-
+        private string listsave()
+        {
+            return "\nUsage: listsave\n";
+        }
         private string exit()
         {
             return "\nexit EasySave Software\n";
