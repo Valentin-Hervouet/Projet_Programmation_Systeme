@@ -20,7 +20,7 @@ namespace EasySaveVersion1.Controller
 
             List<String> returndata = new List<string>();
 
-            string databackformmodel = "";
+            string databackformmodel = ""; ;
 
             returndata.Add("");
 
@@ -28,7 +28,7 @@ namespace EasySaveVersion1.Controller
             {
 
                 returndata = consoleUI.shell(databackformmodel);
-
+                databackformmodel = "";
 
 
                 // creatsave
@@ -41,11 +41,12 @@ namespace EasySaveVersion1.Controller
                 }
 
                 // listsave
-                if (returndata[0] == "listsave" && returndata.Count == 2)
+                if (returndata[0] == "listsave" && returndata.Count == 1)
                 {
                     Model.ListSave save = new Model.ListSave();
-                    databackformmodel = save.listsave(returndata[1]);
-
+                    databackformmodel = save.listsave();
+                    
+                        
                     //createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
@@ -54,24 +55,19 @@ namespace EasySaveVersion1.Controller
                 {
                     Model.Saving save = new Model.Saving();
                     databackformmodel = save.Save(returndata[1]);
-                    save.Save(returndata[1]);
 
                 }
                 // saveall
                 if (returndata[0] == "saveall" && returndata.Count == 1)
                 {
                     Model.SaveAll saveall = new Model.SaveAll();
-                    saveall.saveall();
+                    databackformmodel = saveall.saveall();
                 }
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
                 {
-                    /*
                     Model.DailyLog logdaily = new Model.DailyLog();
-                    logdaily.ReadDailLog();
-                    */
-
-
+                    databackformmodel = logdaily.ReadDailLog();
                 }
 
                 // logstate

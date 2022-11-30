@@ -1,14 +1,23 @@
 ﻿using System;
+using System.Xml.Linq;
+
 namespace EasySaveVersion1.Model
 {
 	public class SaveAll
 	{
-		public Boolean saveall()
+		public string saveall()
 		{
-			//Output
-			// true or false
-			return true;
-		}
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true";
+            }
+            else
+            {
+                return "error";
+            }
+        }
 	}
 }
 

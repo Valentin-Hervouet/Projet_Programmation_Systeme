@@ -13,11 +13,20 @@ namespace EasySaveVersion1.Model
             // Input
             // Sava name
 
-
-
             // Output
-            // True or False 
-            return "Succees";
+            // True or False
+
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true " + name;
+            }
+            else
+            {
+                return "error";
+            }
+
         }
 
         private void SaveAll()

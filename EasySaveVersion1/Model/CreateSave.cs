@@ -23,8 +23,18 @@ namespace EasySaveVersion1.Model
         public string Type { get; set; }
 
         public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave) {
-            Console.Write("CreateSaveInLogFile"+ Name + SourceFile + TargetFile + TypeSave);
-            return "succes";
+            
+            Boolean succes = true;
+
+            if (succes == true)
+            {
+                return "true"+ Name + SourceFile + TargetFile + TypeSave;
+            }
+            else
+            {
+                return "error";
+            }
+
         }
 
 
