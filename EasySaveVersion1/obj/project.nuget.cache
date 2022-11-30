@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "xsAYM0NRE9BzB8wJ3tI7+nqeeepiRbv6noHQtmUtRROCrlKSJslFAVlBhzIiSJZTgZhe9wFlh6aeOaLjNJ6zYw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
@@ -7,12 +8,18 @@
     "C:\\Users\\lolah\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512",
     "C:\\Users\\lolah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "FlFZ0gTWqkP2WrgCucYv/qWL9RqYLNlaxdJgTC75ph2BMgU31RGMTErV285pO4VkDx7IlJZagirt81aRzhxw0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Stashed changes
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problème de lecture du fichier cache C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
