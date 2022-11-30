@@ -115,8 +115,10 @@ namespace EasySaveVersion1.Model
 
         public string ReadDailLog()
         {
+            // at first the succes is false
             Boolean succes = false;
             ReadJSON(Path);
+            //when the reading is done succes goes true so it show the controller that the reading is done
             succes = true;
 
             if (succes == true)
