@@ -114,7 +114,7 @@ namespace EasySaveVersion1.Model
 
 
 
-        public void ReadJSON()
+        public String ReadJSON()
         {
             try
             {
@@ -123,7 +123,7 @@ namespace EasySaveVersion1.Model
                 String line = reader.ReadLine();
                 while (line != null)
                 {
-                    Console.WriteLine(line);
+                    return line;
                     line = reader.ReadLine();
                 }
                 //Close the file 

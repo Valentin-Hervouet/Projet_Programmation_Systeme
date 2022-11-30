@@ -8,19 +8,40 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\fclea\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\lolah\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> master
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
       "projectName": "EasySaveVersion1",
       "projectPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
       "packagesPath": "C:\\Users\\fclea\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+      "projectName": "EasySaveVersion1",
+      "projectPath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+      "packagesPath": "C:\\Users\\lolah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
+>>>>>>> master
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\fclea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\lolah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> master
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +53,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -44,7 +64,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -60,8 +79,20 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+>>>>>>> master
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

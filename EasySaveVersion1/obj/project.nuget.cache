@@ -1,8 +1,21 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "FlFZ0gTWqkP2WrgCucYv/qWL9RqYLNlaxdJgTC75ph2BMgU31RGMTErV285pO4VkDx7IlJZagirt81aRzhxw0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+=======
+  "dgSpecHash": "OEKLllQVj7rJMXU3JsDE4Q8z0rcuZ6TaeDOaX8qH5BindYyTjfWDkBEaDDBlZKD1wDbKc0FErmefc6wu+nSjZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+>>>>>>> master
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
