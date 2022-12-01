@@ -30,7 +30,7 @@ namespace EasySaveVersion1.Controller
                 returndata = consoleUI.shell(databackformmodel);
                 databackformmodel = "";
 
-
+                // 
                 // creatsave
                 if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
@@ -40,16 +40,16 @@ namespace EasySaveVersion1.Controller
                     databackformmodel = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
+                // 
                 // listsave
                 if (returndata[0] == "listsave" && returndata.Count == 1)
                 {
                     Model.ListSave save = new Model.ListSave();
-                    databackformmodel = save.listsave();
-                    
-                        
+                    databackformmodel = save.listsave();      
                     //createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
                 }
 
+                // 
                 // save
                 if (returndata[0] == "save" && returndata.Count == 2)
                 {
@@ -57,12 +57,16 @@ namespace EasySaveVersion1.Controller
                     databackformmodel = save.Save(returndata[1]);
 
                 }
+
+                // 
                 // saveall
                 if (returndata[0] == "saveall" && returndata.Count == 1)
                 {
                     Model.Saving saveall = new Model.Saving();
                     databackformmodel = saveall.SaveAll();
                 }
+
+                // 
                 // logdaily
                 if (returndata[0] == "logdaily" && returndata.Count == 1)
                 {
@@ -70,6 +74,7 @@ namespace EasySaveVersion1.Controller
                     databackformmodel = logdaily.ReadDailLog();
                 }
 
+                // 
                 // logstate
                 if (returndata[0] == "logstate" && returndata.Count == 1)
                 {

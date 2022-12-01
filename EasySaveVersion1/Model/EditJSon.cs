@@ -7,9 +7,6 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        protected string DefaultPath;
-
-        #region methods
         public void ReadJSON(String path)
         {
             //for read the file 
@@ -20,63 +17,78 @@ namespace EasySaveVersion1.Model
                 Console.WriteLine(Line);
                 Line = Reader.ReadLine();
             }
-            Reader.Close();  
+            Reader.Close();
         }
-            //Here is where you can ask which logfile you want to see then you print it
-            /*Console.WriteLine("Please, specify the Log you want to read.\n State or Daily");
-            string StateOrDaily = Console.ReadLine();
-            string Line;
-            if (StateOrDaily == "State" || StateOrDaily == "state" || StateOrDaily == "Statelog" || StateOrDaily == "StateLog" || StateOrDaily == "statelog")
+
+        public string WriteJSON(String path)
+        {
+
+
+            if (true == true)
             {
-                try
-                {
-                    StreamReader sr = new StreamReader("C:\\Statelog.json");
-                    Line = sr.ReadLine();
-                    while (Line != null)
-                    {
-                        Console.WriteLine(Line);
-                        Line = sr.ReadLine();
-                    }
-                    sr.Close();
-                    Console.ReadLine();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Exception: " + e.Message);
-                }
-                finally
-                {
-                    Console.WriteLine("Executing finally block.");
-                }
-            }
-            else if (StateOrDaily == "Daily" || StateOrDaily == "daily" || StateOrDaily == "Dailylog" || StateOrDaily == "DailyLog" || StateOrDaily == "dailylog")
-            {
-                try
-                {
-                    StreamReader sr = new StreamReader("C:\\Dailylog.json");
-                    Line = sr.ReadLine();
-                    while (Line != null)
-                    {
-                        Console.WriteLine(Line);
-                        Line = sr.ReadLine();
-                    }
-                    sr.Close();
-                    Console.ReadLine();
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Exception: " + e.Message);
-                }
-                finally
-                {
-                    Console.WriteLine("Executing finally block.");
-                }
+                return "true " + path;
             }
             else
             {
-                Console.WriteLine("This is not a word understood by EasySave");
-            }*/
-        
+                return "false";
+            }
+
+        }
+        //Here is where you can ask which logfile you want to see then you print it
+        /*Console.WriteLine("Please, specify the Log you want to read.\n State or Daily");
+        string StateOrDaily = Console.ReadLine();
+        string Line;
+        if (StateOrDaily == "State" || StateOrDaily == "state" || StateOrDaily == "Statelog" || StateOrDaily == "StateLog" || StateOrDaily == "statelog")
+        {
+            try
+            {
+                StreamReader sr = new StreamReader("C:\\Statelog.json");
+                Line = sr.ReadLine();
+                while (Line != null)
+                {
+                    Console.WriteLine(Line);
+                    Line = sr.ReadLine();
+                }
+                sr.Close();
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+        }
+        else if (StateOrDaily == "Daily" || StateOrDaily == "daily" || StateOrDaily == "Dailylog" || StateOrDaily == "DailyLog" || StateOrDaily == "dailylog")
+        {
+            try
+            {
+                StreamReader sr = new StreamReader("C:\\Dailylog.json");
+                Line = sr.ReadLine();
+                while (Line != null)
+                {
+                    Console.WriteLine(Line);
+                    Line = sr.ReadLine();
+                }
+                sr.Close();
+                Console.ReadLine();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("This is not a word understood by EasySave");
+        }*/
+
         /*public void WriteJSON(string StateOrDaily, string TextToWrite)
         {
             //Here is where you write in the State log if you created a save or if you execute a file
@@ -126,6 +138,6 @@ namespace EasySaveVersion1.Model
                 Console.WriteLine("Something went wrong");
             }
         }*/
-        #endregion
+#endregion
     }
 }
