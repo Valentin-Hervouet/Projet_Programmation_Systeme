@@ -15,6 +15,7 @@ namespace EasySaveVersion1.Model
         private string Size;
         private string SourceFile;
         private string TargetFile;
+        private string DefaultPath;
         private const string Path = "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveVersion1\\StateLog.json";
         //This is a temporary file that I use to work, we will change it when we will finish all
         public delegate string DelgGet();

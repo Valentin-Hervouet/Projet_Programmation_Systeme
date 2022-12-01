@@ -15,18 +15,17 @@ namespace EasySaveVersion1.Model
         }
         public string CheckPath(string SourceFile)
         {
-            //Return 0 if Path is correct, 1 or something else if Path is not correct
-            Boolean succes = true;
-
-            if (succes == true)
+            if (File.Exists(SourceFile))
             {
                 return "true";
             }
             else
             {
-                return "error source file not found";
+                return "Source File not exist"; 
             }
         }
+
+
         public int CheckNumberFile()
         {
             //Return 0 if Number of File is under 5, 1 or something else if Number of File is 5

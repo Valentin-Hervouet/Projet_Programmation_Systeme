@@ -8,7 +8,7 @@ namespace EasySaveVersion1.Model
     class Saving
     {
         #region methods
-        public string Save( String name)
+        public string Save(string name)
         {
             // Input
             // Sava name

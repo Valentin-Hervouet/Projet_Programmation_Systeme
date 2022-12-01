@@ -38,6 +38,15 @@ namespace EasySaveVersion1.Controller
                     Model.CreateSave createsave = new Model.CreateSave();
 
                     databackformmodel = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+                    // class createsave --> method "CreateSaveInLogFile" for logic to call checkinput & statelog
+                    // class checkinput --> method "" to check if source exist  
+                    // class statelog --> method "CheckNumberOfSave" that check if there is already 5 or more save
+                    // class statelog --> method "writesave" that write data on State.json
+
+                    // "Name": "Save1",
+                    // "SourceFilePath": "",
+                    // "TargetFilePath": "",
+                    
                 }
 
                 // 
@@ -45,8 +54,10 @@ namespace EasySaveVersion1.Controller
                 if (returndata[0] == "listsave" && returndata.Count == 1)
                 {
                     Model.ListSave save = new Model.ListSave();
-                    databackformmodel = save.listsave();      
+                    databackformmodel = save.listsave();
                     //createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+
+                    // class statelog --> method "listsave" read save on State.json
                 }
 
                 // 
@@ -56,6 +67,7 @@ namespace EasySaveVersion1.Controller
                     Model.Saving save = new Model.Saving();
                     databackformmodel = save.Save(returndata[1]);
 
+                    // class Saving --> method "Save" copy file with data from class statelog --> method "getsave"
                 }
 
                 // 
