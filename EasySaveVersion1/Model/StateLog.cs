@@ -7,6 +7,8 @@ namespace EasySaveVersion1.Model
 {
     class StateLog : EditJSon
     {
+        private string testpath = "/tmp/hello.json";
+
         private static StateLog instance;
         private string NameSave;
         private string TimeDate;
@@ -25,6 +27,8 @@ namespace EasySaveVersion1.Model
         {
             
         }
+
+
         public static StateLog GetInstance()
         {
             if (instance == null)
@@ -103,6 +107,9 @@ namespace EasySaveVersion1.Model
             TargetFile = input;
         }
 
+
+
+
         //Methods
         public string GetAllAttributes()
         {
@@ -119,15 +126,15 @@ namespace EasySaveVersion1.Model
         }
         public void SetAllAttributes(string Name, string Time, string State, string Number, string Size, string Source, string Target)
         {
-            NameSave = Name;
-            TimeDate = Time;
+            this.NameSave = Name;
+            this.TimeDate = Time;
             this.State = State;
-            NumberFiles = Number;
+            this.NumberFiles = Number;
             this.Size = Size;
-            SourceFile = Source;
-            TargetFile = Target;
+            this.SourceFile = Source;
+            this.TargetFile = Target;
         }
-
+        /*
         public void WriteJSON()
         {
             try
@@ -158,6 +165,8 @@ namespace EasySaveVersion1.Model
             }
 
         }
+        */
+
 
         public string ReadStateLog()
         {
@@ -194,5 +203,49 @@ namespace EasySaveVersion1.Model
             }
 
         }
+
+
+        public string WriteSaveToJson(string Name, string SourceFile, string TargetFile, string TypeSave)
+        {
+
+            EditJSon json = EditJSon;
+            try
+            {
+                StreamWriter write = new StreamWriter(Path);
+
+                // Write all the infos in the daily log text in a JSON format
+                write.WriteLine("{");
+                write.WriteLine("   \"Name\": \"" + Name + "\",");
+                write.WriteLine("   \"SourceFilePath\": \"" + SourceFile + "\",");
+                write.WriteLine("   \"TargetFilePath\": \"" + TargetFile + "\",");
+                write.WriteLine("   \"State\": \"NOTSTART\",");
+                write.WriteLine("   \"TypeOfSave\": \"" + TypeSave + "\",");
+                write.WriteLine("   \"TotalFilesToCopy\": 0,");
+                write.WriteLine("   \"TotalFilesSize\": 0,");
+                write.WriteLine("   \"NbFilesLeftToDo\": 0,");
+                write.WriteLine("   \"Progression\": 0,");
+                write.WriteLine("}");
+                //Close the file
+                write.Close();
+
+            }
+            catch (Exception e)
+            {
+                return("Exception " + e.Message);
+            }
+            return("true");
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

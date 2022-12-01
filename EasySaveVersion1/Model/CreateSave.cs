@@ -14,9 +14,6 @@ namespace EasySaveVersion1.Model
         private String TypeSave;
         #endregion
 
-        // Notation Get & Save
-        // https://learn.microsoft.com/fr-fr/dotnet/csharp/programming-guide/classes-and-structs/using-properties
-
         private string GetName()
         {
             return this.Name;

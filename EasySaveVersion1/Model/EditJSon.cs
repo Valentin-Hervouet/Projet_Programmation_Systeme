@@ -7,20 +7,26 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        public void ReadJSON(String path)
+        
+
+        public string ReadJSON(String path)
         {
             //for read the file 
             StreamReader Reader = new StreamReader(path);
             String Line = Reader.ReadLine();
+            string OutputString = "";
             while (Line != null)
             {
-                Console.WriteLine(Line);
+                
                 Line = Reader.ReadLine();
+                OutputString += Line;
             }
             Reader.Close();
+            return OutputString;
         }
 
-        public string WriteJSON(String path)
+
+        public string WriteJSON(string path, string data)
         {
 
 
