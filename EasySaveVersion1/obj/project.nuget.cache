@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DtT2PEa4OA/xec24Ic4ziYYrPS2uoALhceapSGCFkwmYqO0+vwjQoyq/S6EcIGGLWTfj0UK/qJr45qva0iFanQ==",
+  "dgSpecHash": "ly7Q7LxGDJdRl3MDw2qpAHxyNNbkJztn8Uq9+0zLRzK7OrHn+B3hUT2EcL1TZ4U/SXXi07k8Ww39xNk5wdY1gg==",
   "success": true,
   "projectFilePath": "/Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/EasySaveVersion1.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "expectedPackageFiles": [
+    "/Users/emilienpuech/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
 }

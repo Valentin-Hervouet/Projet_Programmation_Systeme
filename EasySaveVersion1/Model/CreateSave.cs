@@ -58,7 +58,7 @@ namespace EasySaveVersion1.Model
         {
 
 
-            Model.CheckInput InputPath = new Model.CheckInput();
+            Model.CheckInput InputPath = new Model.CheckInput(); 
 
             if (InputPath.CheckPath(SourceFile) == "true")
             {
@@ -79,6 +79,18 @@ namespace EasySaveVersion1.Model
             {
                 return "error wrong type of save (only complet or differential)";
             }
+
+            Model.StateLog stateLoginstance = Model.StateLog.GetInstance();
+
+            if (stateLoginstance.NumberOfSave("/tmp/hello.json") >= 5){
+                return "Already 5 saves";
+            }
+            else
+            {
+                return stateLoginstance.WriteSaveToJson(Name, SourceFile, TargetFile, TypeSave);
+            }
+
+            
 
 
             // call function to write save in statelog file

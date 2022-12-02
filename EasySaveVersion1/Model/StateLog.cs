@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using System.Linq;
 
 namespace EasySaveVersion1.Model
 {
@@ -25,7 +28,7 @@ namespace EasySaveVersion1.Model
         //Singleton set up
         private StateLog()
         {
-            
+
         }
 
 
@@ -121,7 +124,7 @@ namespace EasySaveVersion1.Model
             delgcast += GetSize;
             delgcast += GetTarget;
             delgcast += GetSource;
-       
+
             return delgcast();
         }
         public void SetAllAttributes(string Name, string Time, string State, string Number, string Size, string Source, string Target)
@@ -204,48 +207,18 @@ namespace EasySaveVersion1.Model
 
         }
 
-
+        /*
         public string WriteSaveToJson(string Name, string SourceFile, string TargetFile, string TypeSave)
         {
+            // 2 time sourceFile here for the same variable !!!
 
-            EditJSon json = EditJSon;
-            try
-            {
-                StreamWriter write = new StreamWriter(Path);
-
-                // Write all the infos in the daily log text in a JSON format
-                write.WriteLine("{");
-                write.WriteLine("   \"Name\": \"" + Name + "\",");
-                write.WriteLine("   \"SourceFilePath\": \"" + SourceFile + "\",");
-                write.WriteLine("   \"TargetFilePath\": \"" + TargetFile + "\",");
-                write.WriteLine("   \"State\": \"NOTSTART\",");
-                write.WriteLine("   \"TypeOfSave\": \"" + TypeSave + "\",");
-                write.WriteLine("   \"TotalFilesToCopy\": 0,");
-                write.WriteLine("   \"TotalFilesSize\": 0,");
-                write.WriteLine("   \"NbFilesLeftToDo\": 0,");
-                write.WriteLine("   \"Progression\": 0,");
-                write.WriteLine("}");
-                //Close the file
-                write.Close();
-
-            }
-            catch (Exception e)
-            {
-                return("Exception " + e.Message);
-            }
-            return("true");
-            
+            return SimpleWrite(ReadStateLogJSON(SourceFile), SourceFile);
         }
-
-
-
-
-
-
-
-
-
-
+        */  
 
     }
+
+
+
 }
+
