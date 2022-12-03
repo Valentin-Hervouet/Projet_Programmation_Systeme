@@ -14,7 +14,7 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        private string path = "/tmp/hello.json";
+        private string path = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_state.json";
 
 
 
@@ -30,6 +30,7 @@ namespace EasySaveVersion1.Model
             int NbFilesLeftToDo;
             int Progression;
 
+            /*
             public statelogsave(string Name,string State, string SourceFile, string TargetFile, string TypeSave)
             {
                 this.Name = Name;
@@ -37,8 +38,8 @@ namespace EasySaveVersion1.Model
                 this.SourceFilePath = SourceFile;
                 this.TargetFilePath = TargetFile;
                 this.TypeOfSave = TypeSave;
-
-            }
+                
+            }*/
         };
 
 
@@ -60,11 +61,11 @@ namespace EasySaveVersion1.Model
 
 
         // get number of element(nb. of save) in logstate file 
-        public int NumberOfSave(String path)
+        public int NumberOfSave()
         {
             var incoming = new List<statelogsave>();
 
-            incoming = ReadStateLogJSON(path);
+            incoming = ReadStateLogJSON(this.path);
 
             return incoming.Count;
         }
@@ -101,6 +102,8 @@ namespace EasySaveVersion1.Model
 
         public string WriteSaveToJson(string Name, string SourceFile, string TargetFile, string TypeSave)
         {
+
+            /*
             // 2 time sourceFile here for the same variable !!!
             List<statelogsave> data = ReadStateLogJSON(SourceFile);
 
@@ -123,9 +126,9 @@ namespace EasySaveVersion1.Model
 
             string jsonString = JsonSerializer.Serialize(data);
         File.WriteAllText(path, jsonString);
-
+            */
             return "true";
-
+            
 ;
         }
 

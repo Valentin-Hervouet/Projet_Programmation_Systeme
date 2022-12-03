@@ -82,7 +82,7 @@ namespace EasySaveVersion1.Model
 
             Model.StateLog stateLoginstance = Model.StateLog.GetInstance();
 
-            if (stateLoginstance.NumberOfSave("/tmp/hello.json") >= 5){
+            if (stateLoginstance.NumberOfSave() >= 5){
                 return "Already 5 saves";
             }
             else

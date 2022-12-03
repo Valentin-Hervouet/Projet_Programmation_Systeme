@@ -46,3 +46,19 @@ C:/Users/lolah/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreap
 >>>>>>> Stashed changes
 /Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/emilienpuech/source/Projet/Projet_Programmation_Systeme/EasySaveVersion1/obj/Debug/netcoreapp3.1/EasySaveVersion1.csproj.CopyComplete
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.csproj.AssemblyReference.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.AssemblyInfoInputs.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.AssemblyInfo.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.csproj.CoreCompileInputs.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.pdb
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.exe
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.deps.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.runtimeconfig.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.runtimeconfig.dev.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\EasySaveVersion1.pdb
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.csproj.CopyComplete
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveVersion1\obj\Debug\netcoreapp3.1\EasySaveVersion1.genruntimeconfig.cache

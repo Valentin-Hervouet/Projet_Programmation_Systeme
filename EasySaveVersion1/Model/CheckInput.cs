@@ -15,7 +15,7 @@ namespace EasySaveVersion1.Model
         }
         public string CheckPath(string SourceFile)
         {
-            if (File.Exists(SourceFile))
+            if (File.Exists(SourceFile) || (Directory.Exists(SourceFile) && Directory.EnumerateFiles(SourceFile) != null))
             {
                 return "true";
             }

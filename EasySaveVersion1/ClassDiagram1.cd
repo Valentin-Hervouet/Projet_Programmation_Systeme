@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EasySaveVersion1.Model.CreateSave">
+    <Position X="5.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAACACAAAAQAAAAAgQAAAAAAAAAgAAJYAIABAA=</HashCode>
+      <FileName>Model\CreateSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.CheckInput">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\CheckInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.DailyLog">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADgAJABAQQCgIABABABAAAAEAAIAAAAAQ=</HashCode>
+      <FileName>Model\DailyLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.EditJSon">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="EasySaveVersion1.Model.EditJSon.statelogsave" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\EditJSon.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAIAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAQAAU=</HashCode>
+      <FileName>Model\EditJSon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.ListSave">
+    <Position X="3.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\LlstSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.Saving">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Saving.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Model.StateLog">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="EasySaveVersion1.Model.StateLog.DelgGet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\StateLog.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IRAIDEAAAAAAgAKAAACIAgIAJABCgAAAAkgAZACABIo=</HashCode>
+      <FileName>Model\StateLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.Controller.Controller">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EasySaveVersion1.View.console">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgAAACAAASAECAAgAQAAAAgAAAAIAAAASAAACA=</HashCode>
+      <FileName>View\View.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
