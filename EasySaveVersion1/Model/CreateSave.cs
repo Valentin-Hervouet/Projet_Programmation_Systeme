@@ -57,10 +57,10 @@ namespace EasySaveVersion1.Model
         public string CreateSaveInLogFile(string Name, string SourceFile, string TargetFile, string TypeSave)
         {
 
+            Model.CheckInput InputPath = new Model.CheckInput();
 
-            Model.CheckInput InputPath = new Model.CheckInput(); 
 
-            if (InputPath.CheckPath(SourceFile) == "true")
+            if ( InputPath.CheckPath(SourceFile) == "" && InputPath.CheckPath(TargetFile) == "")
             {
                 SetName(Name);
                 SetSourceFile(SourceFile);
@@ -68,16 +68,17 @@ namespace EasySaveVersion1.Model
             }
             else
             {
-                return InputPath.CheckPath(SourceFile);
+                return InputPath.CheckPath(SourceFile) + InputPath.CheckPath(TargetFile);
             }
+           
 
-            if (TypeSave == "complet" || TypeSave == "differential")
+            if (TypeSave == "COMPLET" || TypeSave == "DIFFERENTIAL")
             {
                 SetTypeSave(TypeSave);
             }
             else
             {
-                return "error wrong type of save (only complet or differential)";
+                return "error wrong type of save (only COMPLET or DIFFERENTIAL)";
             }
 
             Model.StateLog stateLoginstance = Model.StateLog.GetInstance();

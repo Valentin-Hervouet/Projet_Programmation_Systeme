@@ -7,6 +7,10 @@ using System.Xml;
 using System.Text.Json;
 using System.Globalization;
 using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.Security.Cryptography.X509Certificates;
+using Newtonsoft.Json.Linq;
 
 //using Newtonsoft.Json;
 
@@ -17,45 +21,51 @@ namespace EasySaveVersion1.Model
         private string path = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_state.json";
 
 
+   
 
-        public struct statelogsave
-        {
-            string Name;
-            string SourceFilePath;
-            string TargetFilePath;
-            string State;
-            string TypeOfSave;
-            int TotalFilesToCopy;
-            int TotalFilesSize;
-            int NbFilesLeftToDo;
-            int Progression;
+    public class Statelogsave{
+            public string Name;
+            public string SourceFilePath;
+            public string TargetFilePath;
+            public string State;
+            public string TypeOfSave;
+            public int TotalFilesToCopy;
+            public int TotalFilesSize;
+            public int NbFilesLeftToDo;
+            public int Progression;
 
-            /*
-            public statelogsave(string Name,string State, string SourceFile, string TargetFile, string TypeSave)
+            public Statelogsave() // Constructore without parameters is nessecery for System.Text.Json.JsonSerializer.Deserialize or it can't handle execption
+            {
+            }
+            public Statelogsave(string Name, string SourceFile, string TargetFile, string TypeSave)
             {
                 this.Name = Name;
-                this.State = State;
                 this.SourceFilePath = SourceFile;
                 this.TargetFilePath = TargetFile;
+                this.State = "NOTACTIVE";
                 this.TypeOfSave = TypeSave;
-                
-            }*/
-        };
-
+                this.TotalFilesToCopy = 0;
+                this.TotalFilesSize = 0;
+                this.NbFilesLeftToDo = 0;
+                this.Progression = 0;
+            }
+        }
+        
 
 
 
         // output List<statelogsave> of data struct statelogsave from file path
 
-        public List<statelogsave> ReadStateLogJSON(String path)
+        public List<Statelogsave> ReadStateLogJSON(String path)
         {
-            var output = new List<statelogsave>();
+            var output = new List<Statelogsave>();
 
             using (StreamReader r = new StreamReader(path))
             {
                 string json = r.ReadToEnd();
-                output = JsonSerializer.Deserialize<List<statelogsave>>(json);
+                output = System.Text.Json.JsonSerializer.Deserialize<List<Statelogsave>>(json);
             }
+
             return output;
         }
 
@@ -63,7 +73,7 @@ namespace EasySaveVersion1.Model
         // get number of element(nb. of save) in logstate file 
         public int NumberOfSave()
         {
-            var incoming = new List<statelogsave>();
+            var incoming = new List<Statelogsave>();
 
             incoming = ReadStateLogJSON(this.path);
 
@@ -71,37 +81,12 @@ namespace EasySaveVersion1.Model
         }
 
 
-        public string SimpleWrite(List<statelogsave> statelogsave, string path)
+        public string SimpleWrite(List<Statelogsave> statelogsave, string path)
         {
-
-            
-            var incomings = new List<statelogsave>();
-
-            incomings = ReadStateLogJSON(path);
-
-            foreach (statelogsave incoming in incomings)
+            foreach (Statelogsave data in statelogsave)
             {
-                Console.WriteLine(incoming);
+                Console.WriteLine(data.Name);
             }
-
-
-            /*
-            // Add any new employees
-            employeeList.Add(new statelogsave()
-            {
-                Name = "Test Person 1"
-            });
-
-            // Update json data string
-            var jsonData = JsonConvert.SerializeObject(employeeList);
-            System.IO.File.WriteAllText(path, jsonData);
-
-
-
-            var jsonString = JsonSerializer.Serialize(obj, _options);
-            File.WriteAllText(fileName, jsonString);
-            */
-
 
             return "error";
         }
@@ -109,35 +94,20 @@ namespace EasySaveVersion1.Model
         public string WriteSaveToJson(string Name, string SourceFile, string TargetFile, string TypeSave)
         {
 
-            /*
-            // 2 time sourceFile here for the same variable !!!
-            List<statelogsave> data = ReadStateLogJSON(SourceFile);
-
-            SimpleWrite(data,SourceFile);
-            /*
-            public struct DefaultStateLog
-        {
-            string Name;
-            string SourceFilePath;
-            string TargetFilePath;
-            string State;
-            string TypeOfSave;
-            int TotalFilesToCopy;
-            int TotalFilesSize;
-            int NbFilesLeftToDo;
-            int Progression;
-
-            public Coordinate(int x, int y)
-        };
-
-        data.Add(DefaultStateLog);
-
-            string jsonString = JsonSerializer.Serialize(data);
-        File.WriteAllText(path, jsonString);
-            */
-            return "true";
+            string json = File.ReadAllText(path);
             
-;
+            Statelogsave save = new Statelogsave(Name, SourceFile, TargetFile, TypeSave);
+
+            var list = JsonConvert.DeserializeObject<List<Statelogsave>>(json);
+            new List<Statelogsave>();
+
+            list.Add(save);
+
+            // Write to file
+            string updatedJson = JsonConvert.SerializeObject(list, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(path, updatedJson);
+
+            return "Created save named -->" + save.Name + "\n";         
         }
 
 

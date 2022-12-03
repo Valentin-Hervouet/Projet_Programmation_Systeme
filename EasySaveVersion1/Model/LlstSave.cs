@@ -1,24 +1,29 @@
 ﻿using System;
+using System.IO;
+
 namespace EasySaveVersion1.Model
 {
 	public class ListSave
 	{
-		public string listsave()
+        private string path = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_state.json";
+
+        public string listsave()
 		{
-			// Input
-			// string save
 
-			// Output
-			// True or False
-
-			Boolean succes = false;
-
-            if (succes == true){
-				return "output list of save";
+            string json2 = File.ReadAllText(path);
+            dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(json2);
+            
+			if (jsonObj.Count == 0)
+			{
+				return "no current save create a save with: creatsave";
 			}else{
-				return "current save missing create a save with: creatsave";
+				string toreturn = "";
+				foreach (var save in jsonObj)
+				{
+					toreturn += save.Name + "\n";
+                }	
+				return toreturn;
 			}
-
 		}
 	}
 }

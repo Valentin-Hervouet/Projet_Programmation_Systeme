@@ -122,7 +122,7 @@ namespace EasySaveVersion1.View
         }
         private string createsave()
         {
-            return "\nUsage: createsave name sourcefile destinationfile type( complet || differential )\n";
+            return "\nUsage: createsave name sourcefile destinationfile type( COMPLET or DIFFERENTIAL )\n";
         }
         private string save()
         {

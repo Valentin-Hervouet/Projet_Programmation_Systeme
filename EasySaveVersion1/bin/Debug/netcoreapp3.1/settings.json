@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Save1",
+    "Name": "hello",
     "SourceFilePath": "",
     "TargetFilePath": "",
     "State": "NOTACTIVE",
@@ -11,7 +11,7 @@
     "Progression": 0
   },
   {
-    "Name": "Save1",
+    "Name": "Save2",
     "SourceFilePath": "",
     "TargetFilePath": "",
     "State": "NOTACTIVE",
@@ -22,7 +22,7 @@
     "Progression": 0
   },
   {
-    "Name": "Save1",
+    "Name": "Save3",
     "SourceFilePath": "",
     "TargetFilePath": "",
     "State": "NOTACTIVE",
@@ -33,22 +33,11 @@
     "Progression": 0
   },
   {
-    "Name": "save",
-    "SourceFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\Sample_state.json",
-    "TargetFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\",
+    "Name": "Save4",
+    "SourceFilePath": "",
+    "TargetFilePath": "",
     "State": "NOTACTIVE",
-    "TypeOfSave": "complet",
-    "TotalFilesToCopy": 0,
-    "TotalFilesSize": 0,
-    "NbFilesLeftToDo": 0,
-    "Progression": 0
-  },
-  {
-    "Name": "save",
-    "SourceFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\Sample_state.json",
-    "TargetFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\",
-    "State": "NOTACTIVE",
-    "TypeOfSave": "complet",
+    "TypeOfSave": "COMPLET",
     "TotalFilesToCopy": 0,
     "TotalFilesSize": 0,
     "NbFilesLeftToDo": 0,

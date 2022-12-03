@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7qO6fxba+Lo9Fb1ylX6A2TFt/3HH3lb7fhATfWO+iofRo8XkaWWtwaNmfOmhsD1QkrUqGeH7DCy9gyuM6aZKMA==",
+  "dgSpecHash": "Q3Ncyo8VWG0eOzsX9hgDHGj9MzsXs1R9Cw2atSzfXfPRVKJMTr8dSrZX+1mvrUBl1jwSnkVWHR6g8Ndeh06Iyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
+  "projectFilePath": "C:\\Users\\emili\\source\\repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],

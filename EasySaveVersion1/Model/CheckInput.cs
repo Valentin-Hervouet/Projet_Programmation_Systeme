@@ -17,11 +17,11 @@ namespace EasySaveVersion1.Model
         {
             if (File.Exists(SourceFile) || (Directory.Exists(SourceFile) && Directory.EnumerateFiles(SourceFile) != null))
             {
-                return "true";
+                return "";
             }
             else
             {
-                return "Source File not exist -->" + SourceFile ; 
+                return "Source File not exist -->" + SourceFile + "\n"; 
             }
         }
 
