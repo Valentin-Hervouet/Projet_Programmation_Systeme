@@ -74,12 +74,18 @@ namespace EasySaveVersion1.Model
         public string SimpleWrite(List<statelogsave> statelogsave, string path)
         {
 
+            
+            var incomings = new List<statelogsave>();
+
+            incomings = ReadStateLogJSON(path);
+
+            foreach (statelogsave incoming in incomings)
+            {
+                Console.WriteLine(incoming);
+            }
+
+
             /*
-            var incoming = new List<statelogsave>();
-
-            incoming = ReadStateLogJSON(path);
-
-
             // Add any new employees
             employeeList.Add(new statelogsave()
             {
@@ -107,6 +113,8 @@ namespace EasySaveVersion1.Model
             // 2 time sourceFile here for the same variable !!!
             List<statelogsave> data = ReadStateLogJSON(SourceFile);
 
+            SimpleWrite(data,SourceFile);
+            /*
             public struct DefaultStateLog
         {
             string Name;
@@ -316,4 +324,5 @@ namespace EasySaveVersion1.Model
     }*/
     //#endregion
 }
+
 }
