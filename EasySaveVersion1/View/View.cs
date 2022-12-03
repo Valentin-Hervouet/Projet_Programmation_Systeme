@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using System.Linq;
-using System.Collections;
+
 
 namespace EasySaveVersion1.View
 {
@@ -23,17 +20,17 @@ namespace EasySaveVersion1.View
                     |___/ ";
 
 
-        public void Setcmd() {
+        private void Setcmd() {
             string[] data = Console.ReadLine().Split(' ');
             this.cmd = new List<string>(data);
         }
 
-        public void Setcmdlist(List<string> data)
+        private void Setcmdlist(List<string> data)
         {
             this.cmd = data;
         }
 
-        public List<string> Getcmd() {
+        private List<string> Getcmd() {
             return this.cmd;
         }
 

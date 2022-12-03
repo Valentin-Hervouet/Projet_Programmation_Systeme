@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
 
 namespace EasySaveVersion1.Model
 {
     class CreateSave
     {
-        #region attributes
         private String Name;
         private String SourceFile;
         private String TargetFile;
         private String TypeSave;
-        #endregion
 
         private string GetName()
         {
@@ -22,7 +17,7 @@ namespace EasySaveVersion1.Model
         {
             this.Name = Name;
         }
-
+        
         private string GetSourceFile()
         {
             return this.SourceFile;
@@ -91,7 +86,7 @@ namespace EasySaveVersion1.Model
             else
             {
                 // If everything is right add save to the statelog JSON file 
-                return stateLoginstance.WriteSaveToJson(Name, SourceFile, TargetFile, TypeSave);
+                return stateLoginstance.WriteSaveToJson(GetName(), GetSourceFile(), GetTargetFile(), GetTypeSave());
             }
         }
     }

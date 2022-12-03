@@ -1,17 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Text.Json.Serialization;
-using System.Xml;
-using System.Text.Json;
-using System.Globalization;
-using System.Linq;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Security.Cryptography.X509Certificates;
-using Newtonsoft.Json.Linq;
-using static EasySaveVersion1.Model.StateLog;
 
 namespace EasySaveVersion1.Model
 {
@@ -149,6 +139,24 @@ namespace EasySaveVersion1.Model
             // Write to file
             string updatedJson = JsonConvert.SerializeObject(list, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText(this.statepath, updatedJson);
+        }
+        public string ListSave()
+        {
+            var list = OpenStateJSON();
+
+            if (list.Count == 0)
+            {
+                return "no current save create a save with: creatsave";
+            }
+            else
+            {
+                string output = "List of Saves:\n";
+                foreach (var save in list)
+                {
+                    output += save.Name + "\n";
+                }
+                return output;
+            }
         }
 
     }

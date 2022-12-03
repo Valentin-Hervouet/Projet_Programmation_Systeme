@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using EasySaveVersion1.View;
+
 
 namespace EasySaveVersion1.Controller
 {
@@ -39,9 +36,9 @@ namespace EasySaveVersion1.Controller
                 // listsave command 
                 if (returndata[0] == "listsave" && returndata.Count == 1)
                 {
-                    Model.ListSave save = new Model.ListSave();
-                    databackformmodel = save.listsave();
-                    // class statelog --> method "listsave" read save on State.json
+                    Model.StateLog logstate = Model.StateLog.GetInstance();
+                    databackformmodel = logstate.ListSave();
+                    // class statelog --> method "ListSave" read save on State.json
                 }
 
                 // save command
