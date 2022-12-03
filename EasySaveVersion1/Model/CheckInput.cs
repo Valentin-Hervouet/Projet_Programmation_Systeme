@@ -1,35 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using System.Diagnostics;
-using System.Xml.Linq;
+﻿using System.IO;
 
 namespace EasySaveVersion1.Model
 {
     class CheckInput
     {
-        public CheckInput()
+        public string CheckPathSourceFile(string SourceFile)
         {
-
-        }
-        public string CheckPath(string SourceFile)
-        {
+            // check if input file exist or input dir exist and has file in it 
             if (File.Exists(SourceFile) || (Directory.Exists(SourceFile) && Directory.EnumerateFiles(SourceFile) != null))
             {
                 return "";
             }
             else
             {
-                return "Source File not exist -->" + SourceFile + "\n"; 
+                return "Source File doesn't exist -->" + SourceFile + "\n"; 
             }
         }
 
-
-        public int CheckNumberFile()
+        public string CheckPathTargetFile(string TargetFile)
         {
-            //Return 0 if Number of File is under 5, 1 or something else if Number of File is 5
-            return 0;
+            // check if input file exist or input dir exist and has file in it 
+            if (Directory.Exists(TargetFile) )
+            {
+                return "";
+            }
+            else
+            {
+                return "Target Diresctory doesn't exist -->" + TargetFile+ "\n"; 
+            }
         }
     }
 }

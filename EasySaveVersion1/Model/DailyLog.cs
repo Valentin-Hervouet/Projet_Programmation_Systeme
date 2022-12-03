@@ -1,135 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.IO;
-using System.Xml.Linq;
+﻿using Newtonsoft.Json;
 
 namespace EasySaveVersion1.Model
 {
     class DailyLog : EditJSon
     {
-        #region attributes
-        private String NameSave;
-        private String TimeDate;
-        private String SourceFile;
-        private String TargetFile;
-        private double Size;
-        private int Duration;
-        private static DailyLog instance;
-        private const String Path = "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveVersion1\\DailyLog.json";
-        //This is a temporary file that I use to work, we will change it when we will finish all
-        #endregion
+        private static DailyLog _instance;
 
-        #region methods
-        //Constructor
-        /*
-        private  DailyLog()
+        private DailyLog()
         {
-            
-        }
-        */
-        //Set
-        public void set(String NameSave, String TimeDate, String SourceFile, String TargetFile, double Size, int Duration)
-        {
-            this.NameSave = NameSave;
-            this.TimeDate = TimeDate;
-            this.SourceFile = SourceFile;
-            this.TargetFile = TargetFile;
-            this.Size = Size;
-            this.Duration = Duration;
-        }
-
-        //Get
-        public String NameSaveGet()
-        {
-            return NameSave;
-        }
-
-        public String TimeDateGet()
-        {
-            return TimeDate;
-        }
-
-        public String SourceFileGet()
-        {
-            return SourceFile;
-        }
-
-        public String TargetFileGet()
-        {
-            return TargetFile;
-        }
-
-        public double SizeGet()
-        {
-            return Size;
-        }
-
-        public int DurationGet()
-        {
-            return Duration;
         }
 
         public static DailyLog GetInstance()
         {
-            if (instance == null)
+            if (_instance == null)
             {
-                instance = new DailyLog();
+                _instance = new DailyLog();
             }
-            return instance;
+            return _instance;
         }
 
 
-        public void WriteJSON()
+
+        // Output content of File Statelog in this.statepath
+        public string ReadJSON()
         {
-            try
-            {
-                StreamWriter write = new StreamWriter(Path);
-
-                // Write all the infos in the daily log text in a JSON format
-                write.WriteLine("{");
-                write.WriteLine("   'Name': " + this.NameSave);
-                write.WriteLine("   'File Source': " + this.SourceFile);
-                write.WriteLine("   'FileTarget': " + this.TargetFile);
-                write.WriteLine("   'destPath': ''");
-                write.WriteLine("   'FileSize': " + this.Size);
-                write.WriteLine("   'FileTransfertTime': " + this.Duration);
-                write.WriteLine("   'time': " + this.TimeDate);
-                write.WriteLine("}");
-                //Close the file
-                write.Close();
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Exception " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("End method");
-            }
-
+            var json = OpenStateJSON();
+            return JsonConvert.SerializeObject(json, Newtonsoft.Json.Formatting.Indented); ;
         }
-
-
-        public string ReadDailLog()
-        {
-            // at first the succes is false
-            Boolean succes = false;
-            ReadJSON(Path);
-            //when the reading is done succes goes true so it show the controller that the reading is done
-            succes = true;
-
-            if (succes == true)
-            {
-                return "true";
-            }else{
-                return "error";
-            }
-
-        }
-        #endregion
-
     }
 }

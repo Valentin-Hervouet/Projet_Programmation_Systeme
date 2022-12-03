@@ -59,8 +59,8 @@ namespace EasySaveVersion1.Model
 
             Model.CheckInput InputPath = new Model.CheckInput();
 
-
-            if ( InputPath.CheckPath(SourceFile) == "" && InputPath.CheckPath(TargetFile) == "")
+            // Check if Source and Target file exist
+            if ( InputPath.CheckPathSourceFile(SourceFile) == "" && InputPath.CheckPathTargetFile(TargetFile) == "")
             {
                 SetName(Name);
                 SetSourceFile(SourceFile);
@@ -68,10 +68,11 @@ namespace EasySaveVersion1.Model
             }
             else
             {
-                return InputPath.CheckPath(SourceFile) + InputPath.CheckPath(TargetFile);
+                // return to user error if source file doesn't exist 
+                return InputPath.CheckPathSourceFile(SourceFile) + InputPath.CheckPathTargetFile(TargetFile);
             }
            
-
+            // check create save Type or return error to the user
             if (TypeSave == "COMPLET" || TypeSave == "DIFFERENTIAL")
             {
                 SetTypeSave(TypeSave);
@@ -81,40 +82,17 @@ namespace EasySaveVersion1.Model
                 return "error wrong type of save (only COMPLET or DIFFERENTIAL)";
             }
 
+            // Get instance from StateLog Class (Singleton DP)
             Model.StateLog stateLoginstance = Model.StateLog.GetInstance();
 
-            if (stateLoginstance.NumberOfSave() >= 5){
+            if (stateLoginstance.NumberOfStateElement() >= 5){
                 return "Already 5 saves";
             }
             else
             {
+                // If everything is right add save to the statelog JSON file 
                 return stateLoginstance.WriteSaveToJson(Name, SourceFile, TargetFile, TypeSave);
             }
-
-            
-
-
-            // call function to write save in statelog file
-            // input --> (GetName(),GetSourceFile(),GetTargetFile(),GetTypeSave())
-            //
-            // output error message or sucess message
-
-
-            Boolean succes = true;
-
-            if (succes == true)
-            {
-                return "Savejob saved --> " + Name + " " + SourceFile + " " + TargetFile + " " + TypeSave;
-            }
-            else
-            {
-                return "error";
-            }
-
         }
-
-
-
-
     }
 }
