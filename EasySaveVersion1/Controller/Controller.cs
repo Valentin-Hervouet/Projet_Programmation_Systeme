@@ -8,7 +8,7 @@ namespace EasySaveVersion1.Controller
     {
         public Controller()
         {
-            View.console consoleUI = new View.console(); // 
+            View.console consoleUI = new View.console();
             List<String> returndata = new List<string>();
 
             string databackformmodel = ""; ;

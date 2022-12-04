@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace EasySaveVersion1.Model
@@ -123,6 +124,12 @@ namespace EasySaveVersion1.Model
         {
             var incoming = OpenStateJSON();
             return incoming.Count;
+        }
+
+        // GET first save element that matche with name in JSON file and input name
+        public Statelogsave OpenSaveStateJSON(string name)
+        {
+            return OpenStateJSON().Find(save => save.Name == name);
         }
 
         // GET list of Statelogsave object from JSON file 

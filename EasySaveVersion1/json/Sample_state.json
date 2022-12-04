@@ -1,8 +1,8 @@
 [
   {
-    "Name": "Save1",
-    "SourceFilePath": "",
-    "TargetFilePath": "",
+    "Name": "savetest",
+    "SourceFilePath": "C:\\Users\\emili\\Desktop\\testinputfile\\CODE.txt",
+    "TargetFilePath": "C:\\Users\\emili\\Desktop\\testoutputfile",
     "State": "NOTACTIVE",
     "TypeOfSave": "COMPLET",
     "TotalFilesToCopy": 0,
@@ -11,20 +11,9 @@
     "Progression": 0
   },
   {
-    "Name": "Save1",
-    "SourceFilePath": "",
-    "TargetFilePath": "",
-    "State": "NOTACTIVE",
-    "TypeOfSave": "COMPLET",
-    "TotalFilesToCopy": 0,
-    "TotalFilesSize": 0,
-    "NbFilesLeftToDo": 0,
-    "Progression": 0
-  },
-  {
-    "Name": "Save1",
-    "SourceFilePath": "",
-    "TargetFilePath": "",
+    "Name": "savetest23",
+    "SourceFilePath": "C:\\Users\\emili\\Desktop\\testinputfile\\CODE.txt",
+    "TargetFilePath": "C:\\Users\\emili\\Desktop\\testoutputfile\\",
     "State": "NOTACTIVE",
     "TypeOfSave": "COMPLET",
     "TotalFilesToCopy": 0,
