@@ -20,5 +20,16 @@
     "TotalFilesSize": 0,
     "NbFilesLeftToDo": 0,
     "Progression": 0
+  },
+  {
+    "Name": "testvalou",
+    "SourceFilePath": "C:\\Users\\emili\\Desktop\\testinputfile",
+    "TargetFilePath": "C:\\Users\\emili\\Desktop\\testoutputfile",
+    "State": "NOTACTIVE",
+    "TypeOfSave": "COMPLET",
+    "TotalFilesToCopy": 0,
+    "TotalFilesSize": 0,
+    "NbFilesLeftToDo": 0,
+    "Progression": 0
   }
 ]

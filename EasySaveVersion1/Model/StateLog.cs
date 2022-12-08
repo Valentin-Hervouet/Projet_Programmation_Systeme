@@ -41,8 +41,12 @@ namespace EasySaveVersion1.Model
             list.Add(save);
             // Write new list to JSON
             WriteStateJSON(list);
-            return "Created save named -->" + save.Name + "\n";            
+            return "Created save named -->" + save.Name + "\n";
+            
         }
+
+
+
     }
 }
 

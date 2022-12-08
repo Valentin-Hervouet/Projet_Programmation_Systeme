@@ -28,5 +28,6 @@ namespace EasySaveVersion1.Model
             var json = OpenStateJSON();
             return JsonConvert.SerializeObject(json, Newtonsoft.Json.Formatting.Indented); ;
         }
+        
     }
 }

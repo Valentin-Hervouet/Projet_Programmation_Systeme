@@ -11,7 +11,7 @@
         "projectName": "EasySaveVersion1",
         "projectPath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\EasySaveVersion1.csproj",
         "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
+        "outputPath": "C:\\Users\\emili\\source\\repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

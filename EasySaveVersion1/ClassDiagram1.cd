@@ -16,13 +16,19 @@
   </Class>
   <Class Name="EasySaveVersion1.Model.DailyLog">
     <Position X="12.25" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="EasySaveVersion1.Model.EditJSon" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="1.01" />
+        <Point X="12.25" Y="1.01" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\DailyLog.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EasySaveVersion1.Model.EditJSon">
-    <Position X="8" Y="0.5" Width="2" />
+    <Position X="8" Y="0.5" Width="2.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -39,22 +45,28 @@
       </Class>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>gAAAAAAgAEAAMAAAAAgAAEAAAAAAgAAAAAAAIAAAAAA=</HashCode>
+      <HashCode>gABAAAAgAEAAMIAAAAgAAEAAAAAAgAAAAAAAIAAAAAA=</HashCode>
       <FileName>Model\EditJson.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EasySaveVersion1.Model.Saving">
-    <Position X="3" Y="6.25" Width="1.5" />
+    <Position X="12.25" Y="6" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIACAAAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Saving.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EasySaveVersion1.Model.StateLog">
-    <Position X="12.25" Y="3.25" Width="1.5" />
+    <Position X="12.25" Y="3.25" Width="2.25" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
+    <InheritanceLine Type="EasySaveVersion1.Model.EditJSon" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.753" />
+        <Point X="12.25" Y="3.753" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Model\StateLog.cs</FileName>

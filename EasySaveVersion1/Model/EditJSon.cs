@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 
 namespace EasySaveVersion1.Model
@@ -21,21 +23,21 @@ namespace EasySaveVersion1.Model
             public string SourceFilePath;
             public string TargetFilePath;
             public string destPath;
-            public int FileSize;
-            public int FileTransferTime;
+            public long FileSize;
+            public string FileTransferTime;
             public DateTime Time;
 
             public Dailylogsave() // Constructore without parameters is nessecery for System.Text.Json.JsonSerializer.Deserialize or it can't handle execption
             {
             }
-            public Dailylogsave(string Name, string SourceFile, string TargetFile)
+            public Dailylogsave(string Name, string SourceFile, string TargetFile, long FileSize, string FileTransferTime)
             {
                 this.Name = Name;
                 this.SourceFilePath = SourceFile;
                 this.TargetFilePath = TargetFile;
                 this.destPath = "";
-                this.FileSize = 0;
-                this.FileTransferTime = 0;
+                this.FileSize = FileSize;
+                this.FileTransferTime = FileTransferTime;
                 this.Time = DateTime.Now;
             }
         }
@@ -56,10 +58,9 @@ namespace EasySaveVersion1.Model
         public List<Dailylogsave> OpenDailyJSON()
         {
             string json = File.ReadAllText(this.dailypath);
-            var list = JsonConvert.DeserializeObject<List<Dailylogsave>>(json);
-            return list;
+            return JsonConvert.DeserializeObject<List<Dailylogsave>>(json);
         }
-
+        
         // SET list of Dailylogsave object to JSON file 
         public void WriteDailyJSON(List<Dailylogsave> list)
         {
@@ -94,7 +95,7 @@ namespace EasySaveVersion1.Model
             public string State;
             public string TypeOfSave;
             public int TotalFilesToCopy;
-            public int TotalFilesSize;
+            public long TotalFilesSize;
             public int NbFilesLeftToDo;
             public int Progression;
 
@@ -164,6 +165,28 @@ namespace EasySaveVersion1.Model
                 }
                 return output;
             }
+        }
+        
+        public string putstateindailylog(Statelogsave save, string watch, long size)
+        {
+            var list = OpenStateJSON();
+            list.Remove(save);
+            WriteStateJSON(list);
+
+            var dailylist = OpenDailyJSON();
+            // Add 1 save to the list with Statelogsave constructor
+            
+            // string Name, string SourceFile, string TargetFile, int FileSize, int FileTransferTime
+            Dailylogsave dailylog = new Dailylogsave(save.Name, save.SourceFilePath, save.TargetFilePath, save.TotalFilesSize , watch);
+            dailylist.Add(dailylog);
+            // Write new list to JSON
+            WriteDailyJSON(dailylist);
+            
+
+
+
+
+            return "Created save named -->" + save.Name + "\n";
         }
 
     }
