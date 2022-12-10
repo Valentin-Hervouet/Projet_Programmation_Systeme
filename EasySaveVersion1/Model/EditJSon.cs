@@ -5,13 +5,15 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
 
 namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
         public string statepath = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_state.json";
-        public string dailypath = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_log.json";
+        public string dailypath = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_daily.json";
 
         //
         // ATTRIBUTE FOR DAILYLOG
@@ -58,7 +60,7 @@ namespace EasySaveVersion1.Model
         public List<Dailylogsave> OpenDailyJSON()
         {
             string json = File.ReadAllText(this.dailypath);
-            return JsonConvert.DeserializeObject<List<Dailylogsave>>(json);
+            return JsonConvert.DeserializeObject<List<Dailylogsave>>(json, new JsonSerializerSettings { DateFormatString = "dd/MM/yyyy HH:mm:ss" });
         }
         
         // SET list of Dailylogsave object to JSON file 

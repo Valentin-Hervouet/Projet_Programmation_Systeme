@@ -25,7 +25,7 @@ namespace EasySaveVersion1.Model
         // Output content of File Statelog in this.statepath
         public string ReadJSON()
         {
-            var json = OpenStateJSON();
+            var json = OpenDailyJSON();
             return JsonConvert.SerializeObject(json, Newtonsoft.Json.Formatting.Indented); ;
         }
         
