@@ -1,6 +1,4 @@
-/usr/bin/bash: line 1: q: command not found
-/.vs/ProjectEvaluation/easysaveversion1.metadata.v5.2
-/.vs/ProjectEvaluation/easysaveversion1.projects.v5.2
-/.vs/EasySaveVersion1/v17/.futdcache.v2
-/.vs/EasySaveVersion1/v17/.suo
-/.vs/EasySaveVersion1/DesignTimeBuild/.dtbcache.v2
+/.vs/*
+/EasySaveVersion1/bin/*
+/EasySaveVersion1/obj/*
+/.vs/EasySaveVersion1/FileContentIndex/a7d3bc56-a7aa-4e18-9c54-b1722f8aedb4.vsidx
