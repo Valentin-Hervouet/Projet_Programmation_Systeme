@@ -35,6 +35,11 @@ namespace EasySaveVersion1.View
             return this.cmd;
         }
 
+        private void DisplayMenu()
+        {
+            Console.WriteLine("EasySave 1.0\n");
+            Console.WriteLine(this.welcomemessage);
+        }
 
 
 
@@ -42,7 +47,7 @@ namespace EasySaveVersion1.View
         {
             if (this.message == true)
             {
-                Console.WriteLine(this.welcomemessage);
+                DisplayMenu();
                 this.message = false;
             }
             
@@ -104,6 +109,11 @@ namespace EasySaveVersion1.View
                     Setcmdlist(this.cmd);
                     return;
 
+                case "clear":
+                    Console.Clear();
+                    DisplayMenu();
+                    return;
+
                 default:
                     Console.Write($"No Command found named {this.cmd[0]}\n");
                     break;
@@ -116,7 +126,7 @@ namespace EasySaveVersion1.View
 
         private string help()
         {
-            return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- show daily log\nlogstate -- show state log\nexit -- exit program\n";
+            return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- show daily log\nlogstate -- show state log\nclear -- clear console \nexit -- exit program\n";
         }
         private string createsave()
         {
