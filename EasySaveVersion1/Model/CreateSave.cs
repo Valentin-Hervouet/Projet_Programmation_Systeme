@@ -17,7 +17,7 @@ namespace EasySaveVersion1.Model
         {
             this.Name = Name;
         }
-        
+
         private string GetSourceFile()
         {
             return this.SourceFile;
@@ -55,7 +55,7 @@ namespace EasySaveVersion1.Model
             Model.CheckInput InputPath = new Model.CheckInput();
 
             // Check if Source and Target file exist
-            if ( InputPath.CheckPathSourceFile(SourceFile) == "" && InputPath.CheckPathTargetFile(TargetFile) == "")
+            if (InputPath.CheckPathSourceFile(SourceFile) == "" && InputPath.CheckPathTargetFile(TargetFile) == "")
             {
                 SetName(Name);
                 SetSourceFile(SourceFile);
@@ -66,7 +66,7 @@ namespace EasySaveVersion1.Model
                 // return to user error if source file doesn't exist 
                 return InputPath.CheckPathSourceFile(SourceFile) + InputPath.CheckPathTargetFile(TargetFile);
             }
-           
+
             // check create save Type or return error to the user
             if (TypeSave == "COMPLET" || TypeSave == "DIFFERENTIAL")
             {
@@ -79,15 +79,9 @@ namespace EasySaveVersion1.Model
 
             // Get instance from StateLog Class (Singleton DP)
             Model.StateLog stateLoginstance = Model.StateLog.GetInstance();
+            // If everything is right add save to the statelog JSON file 
+            return stateLoginstance.WriteSaveToJson(GetName(), GetSourceFile(), GetTargetFile(), GetTypeSave());
 
-            if (stateLoginstance.NumberOfStateElement() >= 5){
-                return "Already 5 saves";
-            }
-            else
-            {
-                // If everything is right add save to the statelog JSON file 
-                return stateLoginstance.WriteSaveToJson(GetName(), GetSourceFile(), GetTargetFile(), GetTypeSave());
-            }
         }
     }
 }

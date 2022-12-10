@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-
+using System.IO;
 
 namespace EasySaveVersion1.Model
 {
@@ -43,6 +43,11 @@ namespace EasySaveVersion1.Model
             WriteStateJSON(list);
             return "Created save named -->" + save.Name + "\n";
             
+        }
+
+        public string ReadXML()
+        {
+            return File.ReadAllText(this.statepathxml);
         }
 
 

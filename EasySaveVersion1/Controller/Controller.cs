@@ -21,7 +21,11 @@ namespace EasySaveVersion1.Controller
                 returndata = consoleUI.shell(databackformmodel);
                 databackformmodel = "";
                 
-                // creatsave command
+                // re-write xml files from json file every time, it's bad
+                Model.StateLog editjson = Model.StateLog.GetInstance();
+                editjson.ConvertJsontoXML();
+
+                // createsave command
                 if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
                     // call the class createsave and use the others inputs as parameters
@@ -68,7 +72,23 @@ namespace EasySaveVersion1.Controller
                 {
                     Model.StateLog logstate = Model.StateLog.GetInstance();
                     databackformmodel = logstate.ReadJSON();
-                    logstate.ConvertJsontoXML();
+                }
+
+
+
+
+                // logdailyxml command
+                if (returndata[0] == "logdailyxml" && returndata.Count == 1)
+                {
+                    Model.DailyLog logdailyxml = Model.DailyLog.GetInstance();
+                    databackformmodel = logdailyxml.ReadXML();
+                }
+
+                // logstatexml command
+                if (returndata[0] == "logstatexml" && returndata.Count == 1)
+                {
+                    Model.StateLog logstatexml = Model.StateLog.GetInstance();
+                    databackformmodel = logstatexml.ReadXML();
                 }
             }
         }

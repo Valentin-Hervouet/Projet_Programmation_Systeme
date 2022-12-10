@@ -130,11 +130,13 @@ namespace EasySaveVersion1.Model
         // 
 
         // GET number of element(nb. of save) from OpenJSON method
+        /*
         public int NumberOfStateElement()
         {
             var incoming = OpenStateJSON();
             return incoming.Count;
         }
+        */
 
         // GET first save element that matche with name in JSON file and input name
         public Statelogsave OpenSaveStateJSON(string name)
