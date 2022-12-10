@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Xml;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -12,8 +15,12 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        public string statepath = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_state.json";
-        public string dailypath = "/Users/emili/Source/Repos/Projet_Programmation_Systeme/EasySaveVersion1/json/Sample_daily.json";
+        public string statepath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
+        public string dailypath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
+
+        public string statepathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
+        public string dailypathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
+
 
         //
         // ATTRIBUTE FOR DAILYLOG
@@ -62,7 +69,7 @@ namespace EasySaveVersion1.Model
             string json = File.ReadAllText(this.dailypath);
             return JsonConvert.DeserializeObject<List<Dailylogsave>>(json, new JsonSerializerSettings { DateFormatString = "dd/MM/yyyy HH:mm:ss" });
         }
-        
+
         // SET list of Dailylogsave object to JSON file 
         public void WriteDailyJSON(List<Dailylogsave> list)
         {
@@ -168,29 +175,55 @@ namespace EasySaveVersion1.Model
                 return output;
             }
         }
-        
+
         public string putstateindailylog(Statelogsave save, string watch, long size)
         {
             var list = OpenStateJSON();
-            list.Remove(save);
+            var item = list.Find(x => x.Name == save.Name);
+            list.Remove(item);
             WriteStateJSON(list);
 
             var dailylist = OpenDailyJSON();
-            // Add 1 save to the list with Statelogsave constructor
-            
-            // string Name, string SourceFile, string TargetFile, int FileSize, int FileTransferTime
-            Dailylogsave dailylog = new Dailylogsave(save.Name, save.SourceFilePath, save.TargetFilePath, save.TotalFilesSize , watch);
+            Dailylogsave dailylog = new Dailylogsave(save.Name, save.SourceFilePath, save.TargetFilePath, size, watch);
             dailylist.Add(dailylog);
-            // Write new list to JSON
             WriteDailyJSON(dailylist);
-            
 
 
 
 
-            return "Created save named -->" + save.Name + "\n";
+
+            return "Save job named --> " + save.Name + " done \n";
         }
+        public void ConvertJsontoXML()
+        {
+            // Code to comment
+            var statelist = OpenStateJSON();
 
+            string statejson = JsonConvert.SerializeObject(statelist, Newtonsoft.Json.Formatting.Indented);
+
+            XNode statenode = JsonConvert.DeserializeXNode(statejson.Substring(1, statejson.Length - 2), "Root");
+
+            string strstatenode = JsonConvert.SerializeObject(statenode);
+
+            File.WriteAllText(this.statepathxml, strstatenode);
+
+
+
+            var dailylist = OpenDailyJSON();
+
+            string dailyjson = JsonConvert.SerializeObject(dailylist, Newtonsoft.Json.Formatting.Indented);
+
+            XNode dailynode = JsonConvert.DeserializeXNode(dailyjson.Substring(1, dailyjson.Length - 2), "Root");
+
+            string strdailynode = JsonConvert.SerializeObject(dailynode);
+
+            File.WriteAllText(this.dailypathxml, strdailynode);
+
+
+        }
     }
+
+
+
 
 }

@@ -67,7 +67,8 @@ namespace EasySaveVersion1.Controller
                 if (returndata[0] == "logstate" && returndata.Count == 1)
                 {
                     Model.StateLog logstate = Model.StateLog.GetInstance();
-                    databackformmodel = logstate.ReadJSON(); 
+                    databackformmodel = logstate.ReadJSON();
+                    logstate.ConvertJsontoXML();
                 }
             }
         }

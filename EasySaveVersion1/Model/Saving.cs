@@ -13,7 +13,7 @@ using EasySaveVersion1.View;
 namespace EasySaveVersion1.Model
 {
     class Saving : EditJSon
-    {        
+    {
         public string Save(string name)
         {
 
@@ -31,14 +31,14 @@ namespace EasySaveVersion1.Model
 
             if (list == null)
             {
-                return "No save to save, create one with createsave";
+                return "No save to save, create one with \"createsave\"";
             }
             else
             {
                 string output = "";
                 foreach (var item in list)
                 {
-                    output += item.Name + "\n";
+                    output += Save(item.Name);
                 }
                 return output;
             }
@@ -53,50 +53,37 @@ namespace EasySaveVersion1.Model
                 CopyFilesRecursively(save.SourceFilePath, save.TargetFilePath);
                 watch.Stop();
 
-                Console.WriteLine("Time --> "+watch.Elapsed.ToString());
-
                 string watche = watch.Elapsed.ToString();
 
-
-                return
-                    save.Name + "\n" +
-                    save.SourceFilePath + "\n" +
-                    save.TargetFilePath + "\n" +
-                    save.State + "\n" +
-                    save.TypeOfSave + "\n" +
-                    save.TotalFilesToCopy + "\n" +
-                    save.TotalFilesSize + "\n" +
-                    save.NbFilesLeftToDo + "\n" +
-                    save.Progression + "\n" +
-                    putstateindailylog(save, watche, GetDirectorySize(save.SourceFilePath));
+                return putstateindailylog(save, watche, GetDirectorySize(save.SourceFilePath));
             }
-            return "No save name List saves with \"listsave\" or create one with \"createsave\"";   
-            
+            return "No save name List saves with \"listsave\" or create one with \"createsave\"";
+
         }
 
         public long GetDirectorySize(string p)
         {
-            // 1
-            // Get array of all file names.
-            string[] a = Directory.GetFiles(p, "*.*");
-
-            // 2
-            // Calculate total bytes of all files in a loop.
-            long b = 0;
-            foreach (string name in a)
+            if (File.Exists(p))
             {
-                // 3
-                // Use FileInfo to get length of each file.
-                FileInfo info = new FileInfo(name);
-                b += info.Length;
+                FileInfo info = new FileInfo(p);
+                return info.Length;
             }
-            // 4
-            // Return total size
-            return b;
+            else
+            {
+                string[] a = Directory.GetFiles(p, "*.*");
+
+                long b = 0;
+                foreach (string name in a)
+                {
+                    FileInfo info = new FileInfo(name);
+                    b += info.Length;
+                }
+                return b;
+            }
         }
 
 
-            private static void CopyFilesRecursively(string sourcePath, string targetPath)
+        private static void CopyFilesRecursively(string sourcePath, string targetPath)
         {
             //Now Create all of the directories
             if (Directory.Exists(sourcePath))
@@ -107,9 +94,14 @@ namespace EasySaveVersion1.Model
                 }
             }
 
+            if (File.Exists(sourcePath))
+            {
+                File.Copy(sourcePath, targetPath + Path.GetFileName(sourcePath));
+                return;
+            }
 
-                //Copy all the files & Replaces any files with the same name
-                foreach (string newPath in Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
+            //Copy all the files & Replaces any files with the same name
+            foreach (string newPath in Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
             {
                 File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
             }

@@ -1,0 +1,6 @@
+C:\Users\emili\Desktop\cesi\projetexe\EasySaveVersion1.exe
+C:\Users\emili\Desktop\cesi\projetexe\EasySaveVersion1.dll
+C:\Users\emili\Desktop\cesi\projetexe\EasySaveVersion1.deps.json
+C:\Users\emili\Desktop\cesi\projetexe\EasySaveVersion1.runtimeconfig.json
+C:\Users\emili\Desktop\cesi\projetexe\EasySaveVersion1.pdb
+C:\Users\emili\Desktop\cesi\projetexe\Newtonsoft.Json.dll

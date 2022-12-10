@@ -52,7 +52,7 @@
   <Class Name="EasySaveVersion1.Model.Saving">
     <Position X="12.25" Y="6" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAIACAAAAAAABAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIACAAAAAAABAAAABAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\Saving.cs</FileName>
     </TypeIdentifier>
   </Class>
