@@ -10,6 +10,7 @@ namespace EasySaveVersion1
     {
         static void Main()
         {
+            Console.Title = "Easysave 1.0";
             Controller.Controller Controller = new Controller.Controller();
             return;
         }

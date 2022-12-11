@@ -9,7 +9,6 @@ namespace EasySaveVersion1.Controller
     {
         public Controller()
         {
-            Console.Title = "EasySave 1.0";
             View.console consoleUI = new View.console();
             List<String> returndata = new List<string>();
 
