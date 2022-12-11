@@ -92,12 +92,12 @@ namespace EasySaveVersion1.View
         {
             if (this.langue == "fr")
             {
-                Console.WriteLine("SauvegardeFacile 1.0\n");
+                Console.WriteLine("SauvegardeFacile 1.1\n");
                 Console.WriteLine(this.welcomemessagefr);
             }
             else
             {
-                Console.WriteLine("EasySave 1.0\n");
+                Console.WriteLine("EasySave 1.1\n");
                 Console.WriteLine(this.welcomemessage);
             }
 
