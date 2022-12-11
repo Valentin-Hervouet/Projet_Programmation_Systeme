@@ -179,7 +179,7 @@ namespace EasySaveVersion1.View
             }
             else
             {
-                return "\nhelp -- Afficher ce message \ncreatesave -- Creer une nouvelle sauvegarde (demarre le guide de creation de sauvegarde)\nlistsave -- Liste tous les travaux de sauvegarde crees\nsave -- Demare un travail de sauvegarde\nsaveall -- Sauvegarde tout les travaux\nlogdaily -- Affiche les \"daily log\" en JSON\nlogstate -- Affiche les \"state log\" en JSON\nlogdailyxml -- Affiche les \"daily log\" en XML\nlogstatexml -- Affiche les \"state log\" en XML\nclear -- Nettoyer la console\nexit -- Quitte le programme\n";
+                return "\nhelp -- Afficher ce message \ncreatesave -- Creer une nouvelle sauvegarde (demarre le guide de creation de sauvegarde)\nlistsave -- Liste tous les travaux de sauvegarde crees\nsave -- Demarre un travail de sauvegarde\nsaveall -- Sauvegarde tout les travaux\nlogdaily -- Affiche les \"daily log\" en JSON\nlogstate -- Affiche les \"state log\" en JSON\nlogdailyxml -- Affiche les \"daily log\" en XML\nlogstatexml -- Affiche les \"state log\" en XML\nclear -- Nettoyer la console\nexit -- Quitte le programme\n";
             }
             
         }
