@@ -23,7 +23,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Model\DailyLog.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,18 +35,18 @@
     <NestedTypes>
       <Class Name="EasySaveVersion1.Model.EditJSon.Dailylogsave">
         <TypeIdentifier>
-          <NewMemberFileName>Model\EditJson.cs</NewMemberFileName>
+          <NewMemberFileName>Model\EditJSon.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
       <Class Name="EasySaveVersion1.Model.EditJSon.Statelogsave">
         <TypeIdentifier>
-          <NewMemberFileName>Model\EditJson.cs</NewMemberFileName>
+          <NewMemberFileName>Model\EditJSon.cs</NewMemberFileName>
         </TypeIdentifier>
       </Class>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>gABAAAAgAEAAMIAAAAgAAEAAAAAAgAAAAAAAIAAAAAA=</HashCode>
-      <FileName>Model\EditJson.cs</FileName>
+      <HashCode>kABAAAAgAAAAMIAAgAkAAEAAAAAAgAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\EditJSon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EasySaveVersion1.Model.Saving">
@@ -68,7 +68,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAABAAAABAAAAgAAAAAAAAAQAAA=</HashCode>
       <FileName>Model\StateLog.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -82,7 +82,7 @@
   <Class Name="EasySaveVersion1.View.console">
     <Position X="0.75" Y="2.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AABAAAgAAACAAASAECAAgAQAAAAgAAAAIAAAASAAACA=</HashCode>
+      <HashCode>AABAAAgEAACAAISAECAAgAQAAAAgAAAAIAAAQSgAACA=</HashCode>
       <FileName>View\View.cs</FileName>
     </TypeIdentifier>
   </Class>

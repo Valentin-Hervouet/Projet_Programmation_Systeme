@@ -12,33 +12,37 @@ namespace EasySaveVersion1.Controller
             View.console consoleUI = new View.console();
             List<String> returndata = new List<string>();
 
+            // string user input from View
             string databackformmodel = "";
-
             returndata.Add("");
 
+            // ask user to choose language
             consoleUI.shellenfr();
 
 
             while (returndata[0] != "exit")
             {
-
+                // pass databackformmodel to be display by the Views
+                // returndata is the user input as a List of string
                 returndata = consoleUI.shell(databackformmodel);
                 databackformmodel = "";
 
-                // re-write xml files from json file every time, it's bad
+                // re-write xml files from json file every time, it's bad very bad
                 Model.StateLog editjson = Model.StateLog.GetInstance();
                 editjson.ConvertJsontoXML();
+
 
                 // createsave command
                 if (returndata[0] == "createsave" && returndata.Count == 5)
                 {
-                    // call the class createsave and use the others inputs as parameters
+                    // call the class createsave and use user inputs as parameters
                     Model.CreateSave createsave = new Model.CreateSave();
                     databackformmodel = createsave.CreateSaveInLogFile(returndata[1], returndata[2], returndata[3], returndata[4]);
+
+                    // CALL class inside CreateSaveInLogFile
                     // class createsave --> method "CreateSaveInLogFile" for logic to call checkinput & statelog
-                    // class checkinput --> method "" to check if source exist  
-                    // class statelog --> method "CheckNumberOfSave" that check if there is already 5 or more save
-                    // class statelog --> method "writesave" that write data on State.json
+                    // class checkinput --> method "CheckPathSourceFile" or CheckPathTargetFile to check if source exist  
+                    // class statelog --> method "WriteSaveToJson" that write data on State.json
                 }
 
                 // listsave command 
@@ -46,7 +50,10 @@ namespace EasySaveVersion1.Controller
                 {
                     Model.StateLog logstate = Model.StateLog.GetInstance();
                     databackformmodel = logstate.ListSave();
-                    // class statelog --> method "ListSave" read save on State.json
+
+                    // CALL class inside ListSave
+                    // class statelog --> method "OpenStateJSON" read save file on State.json
+                    // class statelog --> method "ListSave" return all saves
                 }
 
                 // save command
@@ -78,9 +85,6 @@ namespace EasySaveVersion1.Controller
                     databackformmodel = logstate.ReadJSON();
                 }
 
-
-
-
                 // logdailyxml command
                 if (returndata[0] == "logdailyxml" && returndata.Count == 1)
                 {
@@ -94,7 +98,7 @@ namespace EasySaveVersion1.Controller
                     Model.StateLog logstatexml = Model.StateLog.GetInstance();
                     databackformmodel = logstatexml.ReadXML();
                 }
-            }
+            } // end of while (returndata[0] != "exit")
         }
     }
 }
