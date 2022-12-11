@@ -26,8 +26,8 @@ namespace EasySaveVersion1.Controller
                 databackformmodel = "";
 
                 // re-write xml files from json file every time, it's bad
-                Model.StateLog editjson = Model.StateLog.GetInstance();
-                editjson.ConvertJsontoXML();
+                //Model.StateLog editjson = Model.StateLog.GetInstance();
+                //editjson.ConvertJsontoXML();
 
                 // createsave command
                 if (returndata[0] == "createsave" && returndata.Count == 5)

@@ -20,6 +20,11 @@ namespace EasySaveVersion1.Model
             }
             return _instance;
         }
+        public int NumberOfStateElement()
+        {
+            var incoming = OpenStateJSON();
+            return incoming.Count;
+        }
 
 
 

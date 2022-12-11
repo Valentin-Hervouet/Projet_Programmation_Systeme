@@ -76,12 +76,18 @@ namespace EasySaveVersion1.Model
             {
                 return "error wrong type of save (only COMPLET or DIFFERENTIAL)";
             }
-
             // Get instance from StateLog Class (Singleton DP)
             Model.StateLog stateLoginstance = Model.StateLog.GetInstance();
-            // If everything is right add save to the statelog JSON file 
-            return stateLoginstance.WriteSaveToJson(GetName(), GetSourceFile(), GetTargetFile(), GetTypeSave());
 
+            if (stateLoginstance.NumberOfStateElement() >= 5)
+            {
+                return "Already 5 saves";
+            }
+            else
+            {
+                // If everything is right add save to the statelog JSON file 
+                return stateLoginstance.WriteSaveToJson(GetName(), GetSourceFile(), GetTargetFile(), GetTypeSave());
+            }
         }
     }
 }
