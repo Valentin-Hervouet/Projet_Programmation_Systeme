@@ -63,13 +63,6 @@ namespace EasySaveVersion1.Model
         // METHOD FOR DAILYLOG
         // 
 
-        // GET number of element(nb. of element) from OpenJSON method
-        public int NumberOfDailyElement()
-        {
-            var incoming = OpenDailyJSON();
-            return incoming.Count;
-        }
-
         // GET list of Dailylogsave object from JSON file 
         public List<Dailylogsave> OpenDailyJSON()
         {
@@ -137,13 +130,13 @@ namespace EasySaveVersion1.Model
         // 
 
         // GET number of element(nb. of save) from OpenJSON method
-        /*
+        
         public int NumberOfStateElement()
         {
             var incoming = OpenStateJSON();
             return incoming.Count;
         }
-        */
+        
 
         // GET first save element that matche with name in JSON file and input name
         public Statelogsave OpenSaveStateJSON(string name)
@@ -202,33 +195,6 @@ namespace EasySaveVersion1.Model
 
 
             return "Save job named --> " + save.Name + " done \n";
-        }
-        public void ConvertJsontoXML()
-        {
-            // Code to comment
-            var statelist = OpenStateJSON();
-
-            string statejson = JsonConvert.SerializeObject(statelist, Newtonsoft.Json.Formatting.Indented);
-
-            XNode statenode = JsonConvert.DeserializeXNode(statejson.Substring(1, statejson.Length - 2), "Root");
-
-            string strstatenode = JsonConvert.SerializeObject(statenode);
-
-            File.WriteAllText(this.statepathxml, strstatenode);
-
-
-
-            var dailylist = OpenDailyJSON();
-
-            string dailyjson = JsonConvert.SerializeObject(dailylist, Newtonsoft.Json.Formatting.Indented);
-
-            XNode dailynode = JsonConvert.DeserializeXNode(dailyjson.Substring(1, dailyjson.Length - 2), "Root");
-
-            string strdailynode = JsonConvert.SerializeObject(dailynode);
-
-            File.WriteAllText(this.dailypathxml, strdailynode);
-
-
         }
     }
 

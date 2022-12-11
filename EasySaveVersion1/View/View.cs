@@ -92,12 +92,12 @@ namespace EasySaveVersion1.View
         {
             if (this.langue == "fr")
             {
-                Console.WriteLine("SauvegardeFacile 1.1\n");
+                Console.WriteLine("SauvegardeFacile 1.0\n");
                 Console.WriteLine(this.welcomemessagefr);
             }
             else
             {
-                Console.WriteLine("EasySave 1.1\n");
+                Console.WriteLine("EasySave 1.0\n");
                 Console.WriteLine(this.welcomemessage);
             }
 
@@ -142,15 +142,7 @@ namespace EasySaveVersion1.View
                 case "logstate":
                     Setcmdlist(this.cmd);
                     return;
-
-                case "logdailyxml":
-                    Setcmdlist(this.cmd);
-                    return;
-
-                case "logstatexml":
-                    Setcmdlist(this.cmd);
-                    return;
-
+                   
                 case "exit":
                     Console.Write(exit());
                     Setcmdlist(this.cmd);
@@ -175,11 +167,11 @@ namespace EasySaveVersion1.View
         {
             if(this.langue == "en")
             {
-                return "\nhelp -- Show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- Show daily log in JSON\nlogstate -- Show state log in JSON\nlogdailyxml -- Show daily log in XML\nlogstatexml -- Show state log in XML\nclear -- Clear console \nexit -- Exit program\n";
+                return "\nhelp -- Show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- Show daily log in JSON\nlogstate -- Show state log in JSON\nclear -- Clear console \nexit -- Exit program\n";
             }
             else
             {
-                return "\nhelp -- Afficher ce message \ncreatesave -- Creer une nouvelle sauvegarde (demarre le guide de creation de sauvegarde)\nlistsave -- Liste tous les travaux de sauvegarde crees\nsave -- Demare un travail de sauvegarde\nsaveall -- Sauvegarde tout les travaux\nlogdaily -- Affiche les \"daily log\" en JSON\nlogstate -- Affiche les \"state log\" en JSON\nlogdailyxml -- Affiche les \"daily log\" en XML\nlogstatexml -- Affiche les \"state log\" en XML\nclear -- Nettoyer la console\nexit -- Quitte le programme\n";
+                return "\nhelp -- Afficher ce message \ncreatesave -- Creer une nouvelle sauvegarde (demarre le guide de creation de sauvegarde)\nlistsave -- Liste tous les travaux de sauvegarde crees\nsave -- Demarre un travail de sauvegarde\nsaveall -- Sauvegarde tout les travaux\nlogdaily -- Affiche les \"daily log\" en JSON\nlogstate -- Affiche les \"state log\" en JSON\nclear -- Nettoyer la console\nexit -- Quitte le programme\n";
             }
             
         }

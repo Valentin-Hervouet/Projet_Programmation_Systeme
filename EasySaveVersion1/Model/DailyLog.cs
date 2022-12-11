@@ -28,11 +28,12 @@ namespace EasySaveVersion1.Model
             var json = OpenDailyJSON();
             return JsonConvert.SerializeObject(json, Newtonsoft.Json.Formatting.Indented); ;
         }
-
+        /*
         public string ReadXML()
         {
             return File.ReadAllText(this.dailypathxml);
         }
+        */
         
     }
 }

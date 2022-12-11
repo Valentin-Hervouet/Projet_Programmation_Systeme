@@ -49,11 +49,12 @@ namespace EasySaveVersion1.Model
             return "Created save named -->" + save.Name + "\n";
             
         }
-
+        /*
         public string ReadXML()
         {
             return File.ReadAllText(this.statepathxml);
         }
+        */
 
 
 

@@ -77,23 +77,6 @@ namespace EasySaveVersion1.Controller
                     Model.StateLog logstate = Model.StateLog.GetInstance();
                     databackformmodel = logstate.ReadJSON();
                 }
-
-
-
-
-                // logdailyxml command
-                if (returndata[0] == "logdailyxml" && returndata.Count == 1)
-                {
-                    Model.DailyLog logdailyxml = Model.DailyLog.GetInstance();
-                    databackformmodel = logdailyxml.ReadXML();
-                }
-
-                // logstatexml command
-                if (returndata[0] == "logstatexml" && returndata.Count == 1)
-                {
-                    Model.StateLog logstatexml = Model.StateLog.GetInstance();
-                    databackformmodel = logstatexml.ReadXML();
-                }
             }
         }
     }
