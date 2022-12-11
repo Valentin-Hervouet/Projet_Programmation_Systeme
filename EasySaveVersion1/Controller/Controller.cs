@@ -12,16 +12,19 @@ namespace EasySaveVersion1.Controller
             View.console consoleUI = new View.console();
             List<String> returndata = new List<string>();
 
-            string databackformmodel = ""; ;
+            string databackformmodel = "";
 
             returndata.Add("");
+
+            consoleUI.shellenfr();
+
 
             while (returndata[0] != "exit")
             {
 
                 returndata = consoleUI.shell(databackformmodel);
                 databackformmodel = "";
-                
+
                 // re-write xml files from json file every time, it's bad
                 Model.StateLog editjson = Model.StateLog.GetInstance();
                 editjson.ConvertJsontoXML();
@@ -95,4 +98,3 @@ namespace EasySaveVersion1.Controller
         }
     }
 }
-

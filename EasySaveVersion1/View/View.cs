@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 // Ceci est un test
 
@@ -7,40 +8,29 @@ namespace EasySaveVersion1.View
 {
     public class console
     {
+        private string langue;
         private List<string> cmd;
         private bool message = true;
-        
+
         private string welcomemessage = @"
-     _____                _____                  
-    |  ___|              /  ___|                 
-    | |__  __ _ ___ _   _\ `--.  __ ___   _____  
-    |  __|/ _` / __| | | |`--. \/ _` \ \ / / _ \ 
-    | |__| (_| \__ \ |_| /\__/ / (_| |\ V /  __/ 
-    \____/\__,_|___/\__, \____/ \__,_| \_/ \___| 
-                     __/ |                       
-                    |___/ ";
+         _____                _____                  
+        |  ___|              /  ___|                 
+        | |__  __ _ ___ _   _\ `--.  __ ___   _____  
+        |  __|/ _` / __| | | |`--. \/ _` \ \ / / _ \ 
+        | |__| (_| \__ \ |_| /\__/ / (_| |\ V /  __/ 
+        \____/\__,_|___/\__, \____/ \__,_| \_/ \___| 
+                         __/ |                       
+                        |___/ ";
 
-
-        private void Setcmd() {
-            string[] data = Console.ReadLine().Split(' ');
-            this.cmd = new List<string>(data);
-        }
-
-        private void Setcmdlist(List<string> data)
-        {
-            this.cmd = data;
-        }
-
-        private List<string> Getcmd() {
-            return this.cmd;
-        }
-
-        private void DisplayMenu()
-        {
-            Console.WriteLine("EasySave 1.0\n");
-            Console.WriteLine(this.welcomemessage);
-        }
-
+        private String welcomemessagefr = @"
+         _____                                           _     ______         _ _      
+        /  ___|                                         | |    |  ___|       (_) |     
+        \ `--.  __ _ _   ___   _____  __ _  __ _ _ __ __| | ___| |_ __ _  ___ _| | ___ 
+         `--. \/ _` | | | \ \ / / _ \/ _` |/ _` | '__/ _` |/ _ \  _/ _` |/ __| | |/ _ \
+        /\__/ / (_| | |_| |\ V /  __/ (_| | (_| | | | (_| |  __/ || (_| | (__| | |  __/
+        \____/ \__,_|\__,_| \_/ \___|\__, |\__,_|_|  \__,_|\___\_| \__,_|\___|_|_|\___|
+                                      __/ |                                            
+                                     |___/                                             ";
 
 
         public List<string> shell(string databackformmodel)
@@ -50,9 +40,8 @@ namespace EasySaveVersion1.View
                 DisplayMenu();
                 this.message = false;
             }
-            
-                Console.WriteLine(databackformmodel);
-            
+
+            Console.WriteLine(databackformmodel);
 
             // ask user for command to put in attribut
             Setcmd();
@@ -62,10 +51,60 @@ namespace EasySaveVersion1.View
 
             // return this command to controller
             return Getcmd();
+
         }
 
 
 
+        public void shellenfr()
+        {
+            Console.WriteLine("Choose language fr or en ?");
+            this.langue = Console.ReadLine();
+
+            // Itterate until it's the right language
+            while (this.langue != "en" && this.langue!= "fr")
+            {
+                Console.WriteLine("Wrong value, please enter fr or en");
+                this.langue = Console.ReadLine();
+            }
+            Console.Clear();
+        }
+
+
+
+        private void Setcmd()
+        {
+            string[] data = Console.ReadLine().Split(' ');
+            this.cmd = new List<string>(data);
+        }
+
+        private void Setcmdlist(List<string> data)
+        {
+            this.cmd = data;
+        }
+
+        private List<string> Getcmd()
+        {
+            return this.cmd;
+        }
+
+        private void DisplayMenu()
+        {
+            if (this.langue == "fr")
+            {
+                Console.WriteLine("SauvegardeFacile 1.0\n");
+                Console.WriteLine(this.welcomemessagefr);
+            }
+            else
+            {
+                Console.WriteLine("EasySave 1.0\n");
+                Console.WriteLine(this.welcomemessage);
+            }
+
+
+
+
+        }
 
 
         private void allcmd()
@@ -134,27 +173,75 @@ namespace EasySaveVersion1.View
 
         private string help()
         {
-            return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- show daily log in JSON\nlogstate -- show state log in JSON\nlogdailyxml -- show daily log in XML\nlogstatexml -- show state log in XML\nclear -- clear console \nexit -- exit program\n";
+            if(this.langue == "en")
+            {
+                return "\nhelp -- Show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- Show daily log in JSON\nlogstate -- Show state log in JSON\nlogdailyxml -- Show daily log in XML\nlogstatexml -- Show state log in XML\nclear -- Clear console \nexit -- Exit program\n";
+            }
+            else
+            {
+                return "\nhelp -- Afficher ce message \ncreatesave -- Creer une nouvelle sauvegarde (demarre le guide de creation de sauvegarde)\nlistsave -- Liste tous les travaux de sauvegarde crees\nsave -- Demare un travail de sauvegarde\nsaveall -- Sauvegarde tout les travaux\nlogdaily -- Affiche les \"daily log\" en JSON\nlogstate -- Affiche les \"state log\" en JSON\nlogdailyxml -- Affiche les \"daily log\" en XML\nlogstatexml -- Affiche les \"state log\" en XML\nclear -- Nettoyer la console\nexit -- Quitte le programme\n";
+            }
+            
         }
         private string createsave()
         {
-            return "\nUsage: createsave name sourcefile destinationfile type( COMPLET or DIFFERENTIAL )\n";
+            if (this.langue == "en")
+            {
+                return "\nUsage: createsave name sourcefile destinationfile type( COMPLET or DIFFERENTIAL )\n";
+            }
+            else
+            {
+                return "\nUtilisation: createsave nom cheminorigine chemindestination type( COMPLET ou DIFFERENTIAL )\n";
+            }
+            
         }
         private string save()
         {
-            return "\nUsage: save name\n";
+            if (this.langue == "en")
+            {
+                return "\nUsage: save name\n";
+            }
+            else
+            {
+                return "\nUtilisation: save nom\n";
+            }
+
         }
         private string saveall()
         {
-            return "\nUsage: saveall\n";
-        }
+            if (this.langue == "en")
+            {
+                return "\nUsage: saveall\n";
+            }
+            else
+            {
+                return "\nUtilisation: saveall\n";
+            }
+
+        }  
         private string listsave()
         {
-            return "\nUsage: listsave\n";
-        }
+            if (this.langue == "en")
+            {
+                return "\nUsage: listsave\n";
+            }
+            else
+            {
+                return "\nUtilisation: listsave\n";
+            }
+
+        }  
         private string exit()
         {
-            return "\nexit EasySave Software\n";
+            if (this.langue == "en")
+            {
+                return "\nexit EasySave Software\n";
+            }
+            else
+            {
+                return "\nquitte le logiciel SauvegardeFacile\n";
+            }
+
         }
 
 

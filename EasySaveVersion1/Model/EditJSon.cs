@@ -15,12 +15,19 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        public string statepath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
-        public string dailypath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
+        // When Emilien is codding
+        //public string statepath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
+        //public string dailypath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
 
-        public string statepathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
-        public string dailypathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
+        //public string statepathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
+        //public string dailypathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
 
+        // When Valentin is codding
+        public string statepath = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
+        public string dailypath = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
+
+        public string statepathxml = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
+        public string dailypathxml = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
 
         //
         // ATTRIBUTE FOR DAILYLOG
