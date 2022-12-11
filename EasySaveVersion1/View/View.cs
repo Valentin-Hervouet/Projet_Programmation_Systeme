@@ -104,6 +104,14 @@ namespace EasySaveVersion1.View
                     Setcmdlist(this.cmd);
                     return;
 
+                case "logdailyxml":
+                    Setcmdlist(this.cmd);
+                    return;
+
+                case "logstatexml":
+                    Setcmdlist(this.cmd);
+                    return;
+
                 case "exit":
                     Console.Write(exit());
                     Setcmdlist(this.cmd);
@@ -126,7 +134,7 @@ namespace EasySaveVersion1.View
 
         private string help()
         {
-            return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- show daily log\nlogstate -- show state log\nclear -- clear console \nexit -- exit program\n";
+            return "\nhelp -- show this help message \ncreatesave -- Create a new save job (start guide to create save)\nlistsave -- List all save job created\nsave -- Start save job  \nsaveall -- Save all jobs  \nlogdaily -- show daily log in JSON\nlogstate -- show state log in JSON\nlogdailyxml -- show daily log in XML\nlogstatexml -- show state log in XML\nclear -- clear console \nexit -- exit program\n";
         }
         private string createsave()
         {
