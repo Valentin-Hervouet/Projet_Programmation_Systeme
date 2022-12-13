@@ -15,8 +15,8 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        public string statepath = "C:\\Program Files (x86)\\EasySave\\logjson\\state_log.json";
-        public string dailypath = "C:\\Program Files (x86)\\EasySave\\logjson\\daily_log.json";
+        public string statepath = "./state_log.json";
+        public string dailypath = "./daily_log.json";
 
         //
         // ATTRIBUTE FOR DAILYLOG
