@@ -15,7 +15,7 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        
+
         public string statepath = "./state_log.json";
         public string dailypath = "./daily_log.json";
 
@@ -205,9 +205,16 @@ namespace EasySaveVersion1.Model
 
             XNode statenode = JsonConvert.DeserializeXNode(statejson.Substring(1, statejson.Length - 2), "Root");
 
-            string strstatenode = JsonConvert.SerializeObject(statenode);
 
-            File.WriteAllText(this.statepathxml, strstatenode);
+            if (statenode == null)
+            {
+                File.WriteAllText(this.statepathxml, "null");
+            }
+            else
+            {
+                File.WriteAllText(this.statepathxml, statenode.ToString());
+            }
+
 
 
 
@@ -217,15 +224,18 @@ namespace EasySaveVersion1.Model
 
             XNode dailynode = JsonConvert.DeserializeXNode(dailyjson.Substring(1, dailyjson.Length - 2), "Root");
 
-            string strdailynode = JsonConvert.SerializeObject(dailynode);
+            
+            if (dailynode == null)
+            {
+                File.WriteAllText(this.dailypathxml, "null");
+            }
+            else
+            {
+                File.WriteAllText(this.dailypathxml, dailynode.ToString());
+            }
 
-            File.WriteAllText(this.dailypathxml, strdailynode);
 
-
+            
         }
     }
-
-
-
-
 }
