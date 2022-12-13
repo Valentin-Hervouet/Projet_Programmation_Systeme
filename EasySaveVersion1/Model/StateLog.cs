@@ -49,9 +49,6 @@ namespace EasySaveVersion1.Model
         {
             return File.ReadAllText(this.statepathxml);
         }
-
-
-
     }
 }
 
