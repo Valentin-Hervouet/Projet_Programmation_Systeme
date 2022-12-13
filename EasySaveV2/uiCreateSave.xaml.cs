@@ -12,9 +12,7 @@ using System.Windows.Shapes;
 
 namespace EasySaveV2
 {
-    /// <summary>
-    /// Logique d'interaction pour uiCreateSave.xaml
-    /// </summary>
+    
     public partial class uiCreateSave : Window
     {
         public uiCreateSave()
@@ -26,6 +24,8 @@ namespace EasySaveV2
         {
             // Code à exécuter lorsque l'événement click est déclenché
             //MainWindow.CloseCreate();
+            MyDel del = MainWindow.CloseCreate;
+            del();
         }
     }
 }

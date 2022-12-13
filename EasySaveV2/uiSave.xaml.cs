@@ -20,6 +20,14 @@ namespace EasySaveV2
         public uiSave()
         {
             InitializeComponent();
+            Close.Click += new RoutedEventHandler(CloseSave);
+        }
+        private void CloseSave(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            //MainWindow.CloseCreate();
+            MyDel del = MainWindow.CloseSave;
+            del();
         }
     }
 }

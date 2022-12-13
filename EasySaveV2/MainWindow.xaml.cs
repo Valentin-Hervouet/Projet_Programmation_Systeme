@@ -15,10 +15,11 @@ using System.Windows.Shapes;
 
 namespace EasySaveV2
 {
+    public delegate void MyDel();
     public partial class MainWindow : Window
     {
-        private uiCreateSave uiCreateSave { get; set; }
-        private uiSave uiSave { get; set; }
+        private static uiCreateSave uiCreateSave { get; set; }
+        private static uiSave uiSave { get; set; }
 
         public MainWindow()
         {
@@ -42,12 +43,12 @@ namespace EasySaveV2
         private void ShowCreate(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            uiCreateSave.ShowDialog();
+            uiCreateSave.Show();
         }
         private void ShowSave(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            uiSave.ShowDialog();
+            uiSave.Show();
         }
         private void Listsave(object sender, RoutedEventArgs e)
         {
@@ -79,10 +80,15 @@ namespace EasySaveV2
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur Help!");
         }
-        public void CloseCreate()
+        public static void CloseCreate()
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            uiCreateSave.Close();
+            uiCreateSave.Hide();
+        }
+        public static void CloseSave()
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            uiSave.Hide();
         }
     }
 }

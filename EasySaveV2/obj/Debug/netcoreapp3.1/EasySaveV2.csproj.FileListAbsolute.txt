@@ -1,5 +1,5 @@
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.exe
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.dll
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.g.cs
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiSave.g.cs
@@ -19,6 +19,6 @@ C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySav
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.deps.json
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.runtimeconfig.json
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.runtimeconfig.dev.json
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.dll
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.pdb
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.genruntimeconfig.cache
