@@ -15,18 +15,75 @@ using System.Windows.Shapes;
 
 namespace EasySaveV2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private uiCreateSave uiCreateSave { get; set; }
+        private uiSave uiSave { get; set; }
+
         public MainWindow()
         {
+            //Lancement de la Fenetre
             InitializeComponent();
-            uiCreateSave uiCreateSave = new uiCreateSave();
-            uiSave uiSave = new uiSave();
-            CreateSave.Click += (sender, e) => uiCreateSave.ShowDialog();
-            Save.Click += (sender, e) => uiSave.ShowDialog();
+            //Création d'une nouvelle instance de chaque fenêtre
+            uiCreateSave = new uiCreateSave();
+            uiSave = new uiSave();
+
+
+            //Definitions des actions de chaques boutons
+            CreateSave.Click += new RoutedEventHandler(ShowCreate);
+            Save.Click += new RoutedEventHandler(ShowSave);
+            ListSave.Click += new RoutedEventHandler(Listsave);
+            Daily.Click += new RoutedEventHandler(DailyLog);
+            State.Click += new RoutedEventHandler(StateLog);
+            Dailyxml.Click += new RoutedEventHandler(DailyLogXML);
+            Statexml.Click += new RoutedEventHandler(StateLogXML);
+            Help.Click += new RoutedEventHandler(HelpMessage);
+        }
+        private void ShowCreate(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            uiCreateSave.ShowDialog();
+        }
+        private void ShowSave(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            uiSave.ShowDialog();
+        }
+        private void Listsave(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur ListSave!");
+        }
+        private void DailyLog(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur DailyLog!");
+        }
+        private void StateLog(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur StateLog!");
+        }
+        private void DailyLogXML(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur DailyLogXML!");
+        }
+        private void StateLogXML(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur StateLogXML!");
+        }
+        private void HelpMessage(object sender, RoutedEventArgs e)
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            MessageBox.Show("Vous avez cliqué sur Help!");
+        }
+        public void CloseCreate()
+        {
+            // Code à exécuter lorsque l'événement click est déclenché
+            uiCreateSave.Close();
         }
     }
 }
+
