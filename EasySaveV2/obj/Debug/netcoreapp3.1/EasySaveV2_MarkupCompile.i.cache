@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\App.xaml
-11407045341
+3578882269
 
-5-1125732574
+7-1978212468
 192-1533232326
-MainWindow.xaml;
+MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
 
-True
+False
 

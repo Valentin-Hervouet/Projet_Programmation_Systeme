@@ -23,6 +23,10 @@ namespace EasySaveV2
         public MainWindow()
         {
             InitializeComponent();
+            uiCreateSave uiCreateSave = new uiCreateSave();
+            uiSave uiSave = new uiSave();
+            CreateSave.Click += (sender, e) => uiCreateSave.ShowDialog();
+            Save.Click += (sender, e) => uiSave.ShowDialog();
         }
     }
 }

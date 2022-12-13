@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace EasySaveV2
 {
     /// <summary>
-    /// Logique d'interaction pour Home.xaml
+    /// Logique d'interaction pour uiCreateSave.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class uiCreateSave : Window
     {
-        public Home()
+        public uiCreateSave()
         {
             InitializeComponent();
         }

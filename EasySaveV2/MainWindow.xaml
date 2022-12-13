@@ -5,22 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasySaveV2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="714" Width="1162">
+        Title="Home" Height="714" Width="1162">
     <Grid Background="#23262B" Margin="0,0,-39,-16">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1146"/>
-        </Grid.ColumnDefinitions>
         <Label Content="E  A  S  Y  S  A  V  E " Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="26,15,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="233" FontSize="24"/>
-        <Button Content="CreateSave" HorizontalAlignment="Left" Margin="45,95,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="195" FontSize="18"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="45,208,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="58" Width="195" FontSize="18"/>
-        <Button Content="SaveAll" HorizontalAlignment="Left" Margin="45,266,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
-        <Button Content="Logdaily" HorizontalAlignment="Left" Margin="45,322,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="195" FontSize="18"/>
-        <Button Content="Logstate" HorizontalAlignment="Left" Margin="45,379,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
-        <Button Content="Logdailyxml" HorizontalAlignment="Left" Margin="45,435,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
-        <Button Content="Logstatexml" HorizontalAlignment="Left" Margin="45,491,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
-        <Button Content="?" HorizontalAlignment="Left" Margin="256,617,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="37" Width="69"/>
-        <Button Content="Listsave" HorizontalAlignment="Left" Margin="45,152,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="352,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="777" Height="639" Background="#FF2E333A" BorderBrush="#FF2E333A"/>
+        <Button x:Name="CreateSave" Content="CreateSave" HorizontalAlignment="Left" Margin="45,95,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="195" FontSize="18"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="45,208,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="58" Width="195" FontSize="18"/>
+        <Button x:Name="Daily" Content="Logdaily" HorizontalAlignment="Left" Margin="45,263,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="195" FontSize="18"/>
+        <Button x:Name="State" Content="Logstate" HorizontalAlignment="Left" Margin="45,320,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
+        <Button x:Name="Dailyxml" Content="Logdailyxml" HorizontalAlignment="Left" Margin="45,376,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
+        <Button x:Name="Statexml" Content="Logstatexml" HorizontalAlignment="Left" Margin="45,432,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
+        <Button x:Name="Help" Content="?" HorizontalAlignment="Left" Margin="256,617,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="37" Width="69"/>
+        <Button x:Name="ListSave" Content="Listsave" HorizontalAlignment="Left" Margin="45,152,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="56" Width="195" FontSize="18"/>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="352,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="777" Height="639" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18" IsEnabled="False"/>
 
     </Grid>
 </Window>
