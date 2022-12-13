@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Xml;
 using System.Xml.Linq;
 using Newtonsoft.Json;
@@ -209,21 +210,30 @@ namespace EasySaveVersion1.Model
 
             XNode statenode = JsonConvert.DeserializeXNode(statejson.Substring(1, statejson.Length - 2), "Root");
 
-            string strstatenode = JsonConvert.SerializeObject(statenode);
 
-            File.WriteAllText(this.statepathxml, strstatenode);
-
-
-
+            if (statenode == null)
+            {
+                File.WriteAllText(this.statepathxml, "null");
+            }
+            else
+            {
+                File.WriteAllText(this.statepathxml, statenode.ToString());
+            }
             var dailylist = OpenDailyJSON();
 
             string dailyjson = JsonConvert.SerializeObject(dailylist, Newtonsoft.Json.Formatting.Indented);
 
             XNode dailynode = JsonConvert.DeserializeXNode(dailyjson.Substring(1, dailyjson.Length - 2), "Root");
 
-            string strdailynode = JsonConvert.SerializeObject(dailynode);
 
-            File.WriteAllText(this.dailypathxml, strdailynode);
+            if (dailynode == null)
+            {
+                File.WriteAllText(this.dailypathxml, "null");
+            }
+            else
+            {
+                File.WriteAllText(this.dailypathxml, dailynode.ToString());
+            }
 
 
         }
