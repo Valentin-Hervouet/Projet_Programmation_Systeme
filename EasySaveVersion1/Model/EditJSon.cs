@@ -15,9 +15,10 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
+
         // When Emilien is codding
-        public string statepath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
-        public string dailypath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
+        public string statepath = "C:\\Program Files (x86)\\EasySave\\logjson\\state_log.json";
+        public string dailypath = "C:\\Program Files (x86)\\EasySave\\logjson\\daily_log.json";
 
         //public string statepathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
         //public string dailypathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
