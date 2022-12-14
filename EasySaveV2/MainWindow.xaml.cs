@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,22 +25,31 @@ namespace EasySaveV2
 
         public MainWindow()
         {
-            //Lancement de la Fenetre
-            InitializeComponent();
-            //Création d'une nouvelle instance de chaque fenêtre
-            uiCreateSave = new uiCreateSave();
-            uiSave = new uiSave();
+            //while (1 == 1)
+            //{ 
+            if (Process.GetProcessesByName("notepad").Length > 0)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                //Lancement de la Fenetre
+                InitializeComponent();
+                //Création d'une nouvelle instance de chaque fenêtre
+                uiCreateSave = new uiCreateSave();
+                uiSave = new uiSave();
 
 
-            //Definitions des actions de chaques boutons
-            CreateSave.Click += new RoutedEventHandler(ShowCreate);
-            Save.Click += new RoutedEventHandler(ShowSave);
-            ListSave.Click += new RoutedEventHandler(Listsave);
-            Daily.Click += new RoutedEventHandler(DailyLog);
-            State.Click += new RoutedEventHandler(StateLog);
-            Dailyxml.Click += new RoutedEventHandler(DailyLogXML);
-            Statexml.Click += new RoutedEventHandler(StateLogXML);
-            Help.Click += new RoutedEventHandler(HelpMessage);
+                //Definitions des actions de chaques boutons
+                CreateSave.Click += new RoutedEventHandler(ShowCreate);
+                Save.Click += new RoutedEventHandler(ShowSave);
+                ListSave.Click += new RoutedEventHandler(Listsave);
+                Daily.Click += new RoutedEventHandler(DailyLog);
+                State.Click += new RoutedEventHandler(StateLog);
+                Dailyxml.Click += new RoutedEventHandler(DailyLogXML);
+                Statexml.Click += new RoutedEventHandler(StateLogXML);
+                Help.Click += new RoutedEventHandler(HelpMessage);
+            }
         }
         private void ShowCreate(object sender, RoutedEventArgs e)
         {
