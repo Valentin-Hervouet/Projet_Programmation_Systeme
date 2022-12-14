@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {}
+    "C:\\Users\\lolah\\Kraken\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {
+    "C:\\Users\\lolah\\Kraken\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
+        "projectUniqueName": "C:\\Users\\lolah\\Kraken\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
         "projectName": "EasySaveV2",
-        "projectPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
-        "packagesPath": "C:\\Users\\fclea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\obj\\",
+        "projectPath": "C:\\Users\\lolah\\Kraken\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
+        "packagesPath": "C:\\Users\\lolah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lolah\\Kraken\\Projet_Programmation_Systeme\\EasySaveV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\fclea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lolah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +30,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Newtonsoft.Json.Bson": {
               "target": "Package",
@@ -63,7 +65,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

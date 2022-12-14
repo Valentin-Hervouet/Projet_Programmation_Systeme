@@ -15,8 +15,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Content="C H O S E  A  L A N G U A G E" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="322" FontSize="24" />
-        <Button x:Name="EN" Content="En" HorizontalAlignment="Left" Margin="165,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
-        <Button x:Name="FR" Content="Fr" HorizontalAlignment="Left" Margin="322,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
+        <Button x:Name="EN" Content="En" Command="{Binding LangueEN}" HorizontalAlignment="Left" Margin="165,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
+        <Button x:Name="FR" Content="Fr" Command="{Binding LangueFR}" HorizontalAlignment="Left" Margin="322,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
 
     </Grid>
 </Window>

@@ -27,6 +27,12 @@ namespace EasySaveV2
         {
             //while (1 == 1)
             //{ 
+            //if (Process.GetProcessesByName("Notepad")!= null)
+            //{
+            //    Environment.Exit(0);
+            //}
+            //else 
+            
             if (Process.GetProcessesByName("notepad").Length > 0)
             {
                 Environment.Exit(0);
