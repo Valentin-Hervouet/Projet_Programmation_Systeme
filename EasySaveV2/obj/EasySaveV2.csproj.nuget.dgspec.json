@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\CryptoSoftt\\CryptoSoftt.csproj": {}
+    "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\CryptoSoftt\\CryptoSoftt.csproj": {
+    "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\CryptoSoftt\\CryptoSoftt.csproj",
-        "projectName": "CryptoSoftt",
-        "projectPath": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\CryptoSoftt\\CryptoSoftt.csproj",
+        "projectUniqueName": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
+        "projectName": "EasySaveV2",
+        "projectPath": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
         "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\CryptoSoftt\\obj\\",
+        "outputPath": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,6 +64,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"

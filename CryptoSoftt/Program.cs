@@ -10,18 +10,39 @@ namespace CryptoSoftt
         static void Main(string[] args)
         {
             // check if an attribute has been passed or not
-            if (args.Length == 0)
+            /*
+             * if (args.Length == 0)
             {
                 Console.WriteLine("Aucun chemin d'accès au fichier n'a été spécifié. Veuillez réessayer en précisant un chemin de forme semblable à \"C:\\repertoire\\repertoire\\fichier.extention\"");
                 return;
 
             }
+            */
+
+            if (args.Length != 3)
+            {
+                Console.WriteLine("Usage: CryptoSoftt inputpath \"C:\\repertoire\\repertoire\\fichier.extention\" outputpath \"C:\\repertoire\\repertoire\\fichier.extention\"\n");
+                return;
+            }
+
             // The key has to bee an integer of 64 bytes
             long key = 0x193A4B7890AB186F;
             // File to encrypt
             string plaintextFile = args[0];
             // File to encrypt
             string ciphertextFile = args[1];
+
+            // Quits if path does not exists
+            if (!Directory.Exists(plaintextFile))
+            {
+                Console.WriteLine("The path must exist. Check for spelling error\n");
+                return;
+            }
+            if (!Directory.Exists(ciphertextFile))
+            {
+                Console.WriteLine("The path must exist. Check for spelling error\n");
+                return;
+            }
 
             // Read the File clearly
             string plaintext = File.ReadAllText(plaintextFile);

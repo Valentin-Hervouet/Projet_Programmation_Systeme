@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kBVeKKAh0BHalzpiGL8ZXZt3DYlSyQ81nFYl9fgwsx2kGoG1IOLhBbJcT/Tz4BIH0CMGq7SO0F5JQNjg8wT4/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Valentin\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Valentin\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

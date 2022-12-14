@@ -1,0 +1,14 @@
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.exe
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.deps.json
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.runtimeconfig.json
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.runtimeconfig.dev.json
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.dll
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.pdb
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.csproj.AssemblyReference.cache
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.AssemblyInfoInputs.cache
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.AssemblyInfo.cs
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.dll
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.pdb
+C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.genruntimeconfig.cache
