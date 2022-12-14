@@ -70,12 +70,14 @@ namespace EasySaveV2
         private void DailyLogXML(object sender, RoutedEventArgs e)
         {
             Model.DailyLog logdailyxml = Model.DailyLog.GetInstance();
+            logdailyxml.ConvertJsontoXML();
             Message.Text = logdailyxml.ReadXML();
         }
         private void StateLogXML(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
             Model.StateLog logstatexml = Model.StateLog.GetInstance();
+            logstatexml.ConvertJsontoXML();
             Message.Text = logstatexml.ReadXML();
         }
         private void HelpMessage(object sender, RoutedEventArgs e)

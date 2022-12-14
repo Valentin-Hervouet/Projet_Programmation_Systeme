@@ -7,6 +7,7 @@ using System.Linq;
 using System.Xml.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Diagnostics;
+using EasySaveV2.Model;
 
 namespace EasySaveV2.Model
 {

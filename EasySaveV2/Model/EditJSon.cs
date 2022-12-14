@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 
-namespace EasySaveVersion1.Model
+namespace EasySaveV2.Model
 {
     abstract class EditJSon
     {

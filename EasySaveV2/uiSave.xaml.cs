@@ -34,7 +34,7 @@ namespace EasySaveV2
         }
         public void Saveone(object sender, RoutedEventArgs e)
         {
-            TBNameSave = NameSave.ToString();
+            TBNameSave = NameSave.Text;
             //Appel de la View Model en Save One en passant TBNameSave en argument
             Model.Saving save = new Model.Saving();
             MessageBox.Show(save.Save(TBNameSave));

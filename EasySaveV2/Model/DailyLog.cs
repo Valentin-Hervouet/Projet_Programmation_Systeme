@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using EasySaveV2.Model;
+using Newtonsoft.Json;
 using System.IO;
 
 namespace EasySaveV2.Model

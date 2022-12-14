@@ -34,15 +34,18 @@ namespace EasySaveV2
         }
         public void Createsave(object sender, RoutedEventArgs e)
         {
-            TBName = Name.ToString();
-            TBSource = Source.ToString();
-            TBDest = Dest.ToString();
-            TBType = Type.ToString();
+            TBName = Name.Text; // .ToString();
+            TBSource = Source.Text;
+            TBDest = Dest.Text;
+            TBType = Type.Text;
             //Appel de la View Model en Create en passant les 4 strings en argument en argument
 
             Model.CreateSave createsave = new Model.CreateSave();
+
+            //MessageBox.Show(" name -->\"" + TBName + "\"  Source -->\"" + TBSource + "\"  Dest -->\"" + TBDest + "\"  Type -->\"" + TBType);
+
             MessageBox.Show(createsave.CreateSaveInLogFile(TBName, TBSource, TBDest, TBType));
-            //databackformmodel = ;
+            
 
 
 
