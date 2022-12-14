@@ -102,7 +102,7 @@ namespace EasySaveV2 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EasySaveV2;component/uicreatesave.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EasySaveV2;V1.0.0.0;component/uicreatesave.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\uiCreateSave.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

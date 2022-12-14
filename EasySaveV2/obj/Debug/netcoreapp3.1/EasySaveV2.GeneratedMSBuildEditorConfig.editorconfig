@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = EasySaveV2
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\
+=======
+build_property.ProjectDir = C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\
+>>>>>>> v2.0

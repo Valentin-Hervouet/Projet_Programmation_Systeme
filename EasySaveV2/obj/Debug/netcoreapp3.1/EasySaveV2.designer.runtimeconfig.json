@@ -6,8 +6,13 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\lolah\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\lolah\\.nuget\\packages",
+=======
+      "C:\\Users\\fclea\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\emili\\.nuget\\packages",
+>>>>>>> v2.0
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

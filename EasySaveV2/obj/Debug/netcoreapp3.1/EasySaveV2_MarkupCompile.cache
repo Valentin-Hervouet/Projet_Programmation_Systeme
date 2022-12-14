@@ -12,8 +12,18 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\App.xaml
 3-575324509
 
+<<<<<<< HEAD
 15295855732
 1932064205634
+=======
+<<<<<<< Updated upstream
+122008547540
+1941768670137
+=======
+111300424796
+1931432607592
+>>>>>>> Stashed changes
+>>>>>>> v2.0
 MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
 
 False
