@@ -6,8 +6,10 @@ using System.Windows.Input;
 
 namespace EasySaveV2.ViewModel
 {
+    
     public class ViewModel : ViewModelBase
     {
+        private string LangueLangue { set; get; }
         private string tbNameSave;
         private string tbName;
         private string tbSource;
@@ -256,6 +258,14 @@ exit -- exit program";
             // Code à exécuter lorsque l'événement click est déclenché
             uiSave.Hide();
         }
+        public void EN()
+        {
+            LangueLangue = "en";
+        }
+        public void FR()
+        {
+            LangueLangue = "fr";
+        }
         #endregion
 
         #region commands
@@ -341,6 +351,21 @@ exit -- exit program";
             get
             {
                 return new RelayCommand(CloseSave);
+            }
+        }
+
+        public ICommand LangueEN
+        {
+            get
+            {
+                return new RelayCommand(EN);
+            }
+        }
+        public ICommand LangueFR
+        {
+            get
+            {
+                return new RelayCommand(FR);
             }
         }
 

@@ -1,0 +1,22 @@
+﻿<Window x:Class="EasySaveV2.uiCreateSave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySaveV2"
+        xmlns:vm="clr-namespace:EasySaveV2.ViewModel"
+        mc:Ignorable="d"
+        Title="Langue" Height="357" Width="538">
+    <Window.Resources>
+        <vm:ViewModel x:Key="VM"/>
+    </Window.Resources>
+    <Grid Background="#23262B" Margin="0,0,-39,-16" DataContext="{Binding Source={StaticResource VM}}" >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="C H O S E  A  L A N G U A G E" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="322" FontSize="24" />
+        <Button x:Name="EN" Content="En" HorizontalAlignment="Left" Margin="165,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
+        <Button x:Name="FR" Content="Fr" HorizontalAlignment="Left" Margin="322,141,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
+
+    </Grid>
+</Window>
