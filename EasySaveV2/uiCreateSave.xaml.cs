@@ -15,6 +15,7 @@ namespace EasySaveV2
     
     public partial class uiCreateSave : Window
     {
+        // Rentre dans le VM
         private string TBName { set; get; }
         private string TBSource { set; get; }
         private string TBDest { set; get; }
@@ -22,17 +23,18 @@ namespace EasySaveV2
         public uiCreateSave()
         {
             InitializeComponent();
+            //Disparait
             Close.Click += new RoutedEventHandler(CloseCreate);
             Create.Click += new RoutedEventHandler(Createsave);
         }
-        private void CloseCreate(object sender, RoutedEventArgs e)
+        private void CloseCreate(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             //MainWindow.CloseCreate();
             MyDel del = MainWindow.CloseCreate;
             del();
         }
-        public void Createsave(object sender, RoutedEventArgs e)
+        public void Createsave(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             TBName = Name.ToString();
             TBSource = Source.ToString();

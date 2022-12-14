@@ -26,11 +26,13 @@ namespace EasySaveV2
             //Lancement de la Fenetre
             InitializeComponent();
             //Création d'une nouvelle instance de chaque fenêtre
+            //Rentre dans le VM
             uiCreateSave = new uiCreateSave();
             uiSave = new uiSave();
 
 
             //Definitions des actions de chaques boutons
+            //Disparait
             CreateSave.Click += new RoutedEventHandler(ShowCreate);
             Save.Click += new RoutedEventHandler(ShowSave);
             ListSave.Click += new RoutedEventHandler(Listsave);
@@ -40,52 +42,52 @@ namespace EasySaveV2
             Statexml.Click += new RoutedEventHandler(StateLogXML);
             Help.Click += new RoutedEventHandler(HelpMessage);
         }
-        private void ShowCreate(object sender, RoutedEventArgs e)
+        private void ShowCreate(object sender, RoutedEventArgs e) // Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             uiCreateSave.Show();
         }
-        private void ShowSave(object sender, RoutedEventArgs e)
+        private void ShowSave(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             uiSave.Show();
         }
-        private void Listsave(object sender, RoutedEventArgs e)
+        private void Listsave(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur ListSave!");
         }
-        private void DailyLog(object sender, RoutedEventArgs e)
+        private void DailyLog(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur DailyLog!");
         }
-        private void StateLog(object sender, RoutedEventArgs e)
+        private void StateLog(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur StateLog!");
         }
-        private void DailyLogXML(object sender, RoutedEventArgs e)
+        private void DailyLogXML(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur DailyLogXML!");
         }
-        private void StateLogXML(object sender, RoutedEventArgs e)
+        private void StateLogXML(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur StateLogXML!");
         }
-        private void HelpMessage(object sender, RoutedEventArgs e)
+        private void HelpMessage(object sender, RoutedEventArgs e)// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             MessageBox.Show("Vous avez cliqué sur Help!");
         }
-        public static void CloseCreate()
+        public static void CloseCreate()// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             uiCreateSave.Hide();
         }
-        public static void CloseSave()
+        public static void CloseSave()// Rentre dans le VM
         {
             // Code à exécuter lorsque l'événement click est déclenché
             uiSave.Hide();
