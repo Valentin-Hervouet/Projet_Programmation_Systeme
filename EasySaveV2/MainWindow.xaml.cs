@@ -20,6 +20,7 @@ namespace EasySaveV2
     {
         private static uiCreateSave uiCreateSave { get; set; }
         private static uiSave uiSave { get; set; }
+        private string TBmessage { get; set; }
 
         public MainWindow()
         {
@@ -53,32 +54,38 @@ namespace EasySaveV2
         private void Listsave(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur ListSave!");
+            TBmessage = @"Le text que tu veux mettre";
+            Message.Text = TBmessage;
         }
         private void DailyLog(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur DailyLog!");
+            TBmessage = @"Le text que tu veux mettre";
+            Message.Text = TBmessage;
         }
         private void StateLog(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur StateLog!");
+            TBmessage = @"Le text que tu veux mettre";
+            Message.Text = TBmessage;
         }
         private void DailyLogXML(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur DailyLogXML!");
+            TBmessage = @"Le text que tu veux mettre";
+            Message.Text = TBmessage;
         }
         private void StateLogXML(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur StateLogXML!");
+            TBmessage = @"Le text que tu veux mettre";
+            Message.Text = TBmessage;
         }
         private void HelpMessage(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show(@"help -- show this help message
+           
+            TBmessage = @"help -- show this help message
 createsave -- Create a new save job (start guide to create save)
 listsave -- List all save job created
 save -- Start save job
@@ -88,7 +95,8 @@ logstate -- Show state log in JSON
 logdailyxml -- Show daily log in XML
 logstatexml -- Show state log in XML
 clear -- Clear console
-exit -- exit program");
+exit -- exit program";
+            Message.Text = TBmessage;
         }
         public static void CloseCreate()
         {

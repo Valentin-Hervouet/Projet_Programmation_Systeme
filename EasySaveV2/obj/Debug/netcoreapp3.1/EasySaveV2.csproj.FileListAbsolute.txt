@@ -49,3 +49,6 @@ C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\ne
 C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CoreCompileInputs.cache
 C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CopyComplete
 C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.genruntimeconfig.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CopyComplete
