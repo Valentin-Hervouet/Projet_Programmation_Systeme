@@ -39,6 +39,13 @@ namespace EasySaveV2
             TBDest = Dest.ToString();
             TBType = Type.ToString();
             //Appel de la View Model en Create en passant les 4 strings en argument en argument
+
+            Model.CreateSave createsave = new Model.CreateSave();
+            MessageBox.Show(createsave.CreateSaveInLogFile(TBName, TBSource, TBDest, TBType));
+            //databackformmodel = ;
+
+
+
         }
     }
 }

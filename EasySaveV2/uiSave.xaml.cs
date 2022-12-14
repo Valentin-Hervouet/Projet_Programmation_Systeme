@@ -36,9 +36,14 @@ namespace EasySaveV2
         {
             TBNameSave = NameSave.ToString();
             //Appel de la View Model en Save One en passant TBNameSave en argument
+            Model.Saving save = new Model.Saving();
+            MessageBox.Show(save.Save(TBNameSave));
+            
         }
         public void Saveall(object sender, RoutedEventArgs e)
         {
+            Model.Saving saveall = new Model.Saving();
+            MessageBox.Show(saveall.SaveAll());
             //Appel de la View Model en Save All en passant TBNameSave en argument
         }
     }

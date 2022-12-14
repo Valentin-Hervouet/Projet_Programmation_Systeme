@@ -54,32 +54,29 @@ namespace EasySaveV2
         private void Listsave(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            TBmessage = @"Le text que tu veux mettre";
-            Message.Text = TBmessage;
+            Model.StateLog logstate = Model.StateLog.GetInstance();
+            Message.Text = logstate.ListSave();
         }
         private void DailyLog(object sender, RoutedEventArgs e)
         {
-            // Code à exécuter lorsque l'événement click est déclenché
-            TBmessage = @"Le text que tu veux mettre";
-            Message.Text = TBmessage;
+            Model.DailyLog logdaily = Model.DailyLog.GetInstance();
+            Message.Text = logdaily.ReadJSON();
         }
         private void StateLog(object sender, RoutedEventArgs e)
         {
-            // Code à exécuter lorsque l'événement click est déclenché
-            TBmessage = @"Le text que tu veux mettre";
-            Message.Text = TBmessage;
+            Model.StateLog logstate = Model.StateLog.GetInstance();
+            Message.Text = logstate.ReadJSON();
         }
         private void DailyLogXML(object sender, RoutedEventArgs e)
         {
-            // Code à exécuter lorsque l'événement click est déclenché
-            TBmessage = @"Le text que tu veux mettre";
-            Message.Text = TBmessage;
+            Model.DailyLog logdailyxml = Model.DailyLog.GetInstance();
+            Message.Text = logdailyxml.ReadXML();
         }
         private void StateLogXML(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            TBmessage = @"Le text que tu veux mettre";
-            Message.Text = TBmessage;
+            Model.StateLog logstatexml = Model.StateLog.GetInstance();
+            Message.Text = logstatexml.ReadXML();
         }
         private void HelpMessage(object sender, RoutedEventArgs e)
         {

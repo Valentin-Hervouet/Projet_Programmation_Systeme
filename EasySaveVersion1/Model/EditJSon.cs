@@ -5,7 +5,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Xml;
 using System.Xml.Linq;
 using Newtonsoft.Json;
@@ -16,21 +15,13 @@ namespace EasySaveVersion1.Model
 {
     abstract class EditJSon
     {
-        // When Emilien is codding
-        public string statepath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
-        public string dailypath = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
 
-        public string statepathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
-        public string dailypathxml = "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
+        public string statepath = "./state_log.json";
+        public string dailypath = "./daily_log.json";
 
-        // When Valentin is codding
-        /*
-        public string statepath = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\state_log.json";
-        public string dailypath = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\json\\daily_log.json";
+        public string statepathxml = "./state_log.xml";
+        public string dailypathxml = "./daily_log.xml";
 
-        public string statepathxml = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\state_log.xml";
-        public string dailypathxml = "C:\\Users\\Valentin\\Desktop\\ProgramationSysteme\\GroupProject\\Projet_Programmation_Systeme\\EasySaveVersion1\\xml\\daily_log.xml";
-        */
         //
         // ATTRIBUTE FOR DAILYLOG
         //
@@ -199,6 +190,10 @@ namespace EasySaveVersion1.Model
             dailylist.Add(dailylog);
             WriteDailyJSON(dailylist);
 
+
+
+
+
             return "Save job named --> " + save.Name + " done \n";
         }
         public void ConvertJsontoXML()
@@ -219,6 +214,10 @@ namespace EasySaveVersion1.Model
             {
                 File.WriteAllText(this.statepathxml, statenode.ToString());
             }
+
+
+
+
             var dailylist = OpenDailyJSON();
 
             string dailyjson = JsonConvert.SerializeObject(dailylist, Newtonsoft.Json.Formatting.Indented);
@@ -236,10 +235,7 @@ namespace EasySaveVersion1.Model
             }
 
 
+
         }
     }
-
-
-
-
 }
