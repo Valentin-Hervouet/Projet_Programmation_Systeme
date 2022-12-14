@@ -12,3 +12,16 @@ C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\Crypt
 C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.dll
 C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.pdb
 C:\Users\Valentin\Desktop\ProgramationSysteme\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.genruntimeconfig.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.exe
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.deps.json
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.runtimeconfig.json
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.runtimeconfig.dev.json
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.dll
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\bin\Debug\netcoreapp3.1\CryptoSoftt.pdb
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.AssemblyInfoInputs.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.AssemblyInfo.cs
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.csproj.CoreCompileInputs.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.dll
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.pdb
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.genruntimeconfig.cache

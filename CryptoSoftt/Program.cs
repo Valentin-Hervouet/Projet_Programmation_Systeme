@@ -19,7 +19,7 @@ namespace CryptoSoftt
             }
             */
 
-            if (args.Length != 3)
+            if (args.Length != 2)
             {
                 Console.WriteLine("Usage: CryptoSoftt inputpath \"C:\\repertoire\\repertoire\\fichier.extention\" outputpath \"C:\\repertoire\\repertoire\\fichier.extention\"\n");
                 return;
@@ -33,12 +33,7 @@ namespace CryptoSoftt
             string ciphertextFile = args[1];
 
             // Quits if path does not exists
-            if (!Directory.Exists(plaintextFile))
-            {
-                Console.WriteLine("The path must exist. Check for spelling error\n");
-                return;
-            }
-            if (!Directory.Exists(ciphertextFile))
+            if (!File.Exists(plaintextFile))
             {
                 Console.WriteLine("The path must exist. Check for spelling error\n");
                 return;
