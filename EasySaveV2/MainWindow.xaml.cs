@@ -41,14 +41,14 @@ namespace EasySaveV2
 
 
                 //Definitions des actions de chaques boutons
-                CreateSave.Click += new RoutedEventHandler(ShowCreate);
-                Save.Click += new RoutedEventHandler(ShowSave);
-                ListSave.Click += new RoutedEventHandler(Listsave);
-                Daily.Click += new RoutedEventHandler(DailyLog);
-                State.Click += new RoutedEventHandler(StateLog);
-                Dailyxml.Click += new RoutedEventHandler(DailyLogXML);
-                Statexml.Click += new RoutedEventHandler(StateLogXML);
-                Help.Click += new RoutedEventHandler(HelpMessage);
+                //CreateSave.Click += new RoutedEventHandler(ShowCreate);
+                //Save.Click += new RoutedEventHandler(ShowSave);
+                //ListSave.Click += new RoutedEventHandler(Listsave);
+                //Daily.Click += new RoutedEventHandler(DailyLog);
+                //State.Click += new RoutedEventHandler(StateLog);
+                //Dailyxml.Click += new RoutedEventHandler(DailyLogXML);
+                //Statexml.Click += new RoutedEventHandler(StateLogXML);
+                //Help.Click += new RoutedEventHandler(HelpMessage);
             }
         }
         private void ShowCreate(object sender, RoutedEventArgs e)

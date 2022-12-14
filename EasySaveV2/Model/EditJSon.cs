@@ -16,11 +16,11 @@ namespace EasySaveV2.Model
     abstract class EditJSon
     {
 
-        public string statepath = "./state_log.json";
-        public string dailypath = "./daily_log.json";
+        public string statepath = "./json/state_log.json";
+        public string dailypath = "./json/daily_log.json";
 
-        public string statepathxml = "./state_log.xml";
-        public string dailypathxml = "./daily_log.xml";
+        public string statepathxml = "./xml/state_log.xml";
+        public string dailypathxml = "./xml/daily_log.xml";
 
         //
         // ATTRIBUTE FOR DAILYLOG
