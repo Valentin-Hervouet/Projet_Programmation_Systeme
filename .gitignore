@@ -3,4 +3,5 @@
 /.vs/EasySaveVersion1/DesignTimeBuild/.dtbcache.v2
 /EasySaveV2/obj/*
 /EasySaveVersion1/obj/*
-/EasySaveV2/bin/Debug/netcoreapp3.1/EasySaveV2.deps.json
+/EasySaveV2/bin/*
+/EasySaveVersion1/bin/*

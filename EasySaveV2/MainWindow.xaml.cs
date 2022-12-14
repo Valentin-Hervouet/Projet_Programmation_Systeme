@@ -78,7 +78,17 @@ namespace EasySaveV2
         private void HelpMessage(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
-            MessageBox.Show("Vous avez cliqué sur Help!");
+            MessageBox.Show(@"help -- show this help message
+createsave -- Create a new save job (start guide to create save)
+listsave -- List all save job created
+save -- Start save job
+saveall -- Save all jobs
+logdaily -- Show daily log in JSON
+logstate -- Show state log in JSON
+logdailyxml -- Show daily log in XML
+logstatexml -- Show state log in XML
+clear -- Clear console
+exit -- exit program");
         }
         public static void CloseCreate()
         {

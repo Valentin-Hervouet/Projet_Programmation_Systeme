@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\
 EasySaveV2
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\App.xaml
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\App.xaml
 3578882269
 
-131407861779
-1931432607592
+142115984523
+1941768670137
 MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
 
-True
+False
 
