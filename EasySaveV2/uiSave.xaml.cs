@@ -17,17 +17,30 @@ namespace EasySaveV2
     /// </summary>
     public partial class uiSave : Window
     {
+        private string TBNameSave { set; get; }
         public uiSave()
         {
             InitializeComponent();
             Close.Click += new RoutedEventHandler(CloseSave);
+            SaveOne.Click += new RoutedEventHandler(Saveone);
+            SaveAll.Click += new RoutedEventHandler(Saveall);
         }
-        private void CloseSave(object sender, RoutedEventArgs e)
+        public void CloseSave(object sender, RoutedEventArgs e)
         {
             // Code à exécuter lorsque l'événement click est déclenché
             //MainWindow.CloseCreate();
             MyDel del = MainWindow.CloseSave;
             del();
         }
+        public void Saveone(object sender, RoutedEventArgs e)
+        {
+            TBNameSave = NameSave.ToString();
+            //Appel de la View Model en Save One en passant TBNameSave en argument
+        }
+        public void Saveall(object sender, RoutedEventArgs e)
+        {
+            //Appel de la View Model en Save All en passant TBNameSave en argument
+        }
     }
+}
 }
