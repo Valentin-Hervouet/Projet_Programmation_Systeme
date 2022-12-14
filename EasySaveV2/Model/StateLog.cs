@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
 
-namespace EasySaveVersion1.Model
+namespace EasySaveV2.Model
 {
     class StateLog : EditJSon
     {

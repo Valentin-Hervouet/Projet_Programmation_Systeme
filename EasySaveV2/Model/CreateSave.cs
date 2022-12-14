@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EasySaveVersion1.Model
+namespace EasySaveV2.Model
 {
     class CreateSave
     {

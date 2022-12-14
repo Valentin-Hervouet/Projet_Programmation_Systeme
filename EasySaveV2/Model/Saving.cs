@@ -6,11 +6,9 @@ using System.Collections;
 using System.Linq;
 using System.Xml.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using static EasySaveVersion1.Model.EditJSon;
 using System.Diagnostics;
-using EasySaveVersion1.View;
 
-namespace EasySaveVersion1.Model
+namespace EasySaveV2.Model
 {
     class Saving : EditJSon
     {
