@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasySaveVersion1", "EasySaveVersion1\EasySaveVersion1.csproj", "{6DA8EA69-9FD3-4742-9400-BA30FC49C511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasySaveVersion1", "EasySaveVersion1\EasySaveVersion1.csproj", "{6DA8EA69-9FD3-4742-9400-BA30FC49C511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoSoftt", "CryptoSoftt\CryptoSoftt.csproj", "{34537B41-E80F-4715-AC95-9D311FC5F33A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6DA8EA69-9FD3-4742-9400-BA30FC49C511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DA8EA69-9FD3-4742-9400-BA30FC49C511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DA8EA69-9FD3-4742-9400-BA30FC49C511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34537B41-E80F-4715-AC95-9D311FC5F33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34537B41-E80F-4715-AC95-9D311FC5F33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34537B41-E80F-4715-AC95-9D311FC5F33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34537B41-E80F-4715-AC95-9D311FC5F33A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
