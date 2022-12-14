@@ -22,6 +22,7 @@ C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySav
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.pdb
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.g.cs
@@ -48,3 +49,34 @@ C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\E
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CoreCompileInputs.cache
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CopyComplete
 C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.genruntimeconfig.cache
+=======
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.g.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiSave.g.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2_MarkupCompile.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2_MarkupCompile.lref
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.pdb
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.exe
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.deps.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.runtimeconfig.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.runtimeconfig.dev.json
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\EasySaveV2.pdb
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.baml
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiSave.baml
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.g.resources
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.AssemblyInfoInputs.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.AssemblyInfo.cs
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CoreCompileInputs.cache
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.CopyComplete
+C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.genruntimeconfig.cache
+>>>>>>> 42221dddd75f811ef57ea1041d5b6201b4764476
+C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csprojAssemblyReference.cache
+C:\Users\lolah\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs

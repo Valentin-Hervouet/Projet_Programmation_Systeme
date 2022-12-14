@@ -4,20 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EasySaveV2"
+        xmlns:vm="clr-namespace:EasySaveV2.ViewModel"
         mc:Ignorable="d"
         Title="Create a Save" Height="714" Width="1162">
-    <Grid Background="#23262B" Margin="0,0,-39,-16">
+    <Window.Resources>
+        <vm:ViewModel x:Key="VM"/>
+    </Window.Resources>
+    <Grid Background="#23262B" Margin="0,0,-39,-16" DataContext="{Binding Source={StaticResource VM}}">
         <Label Content="C R E A T E  A  S A V E" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="246" FontSize="24"/>
-        <Button x:Name="Create" Content="Create" HorizontalAlignment="Center" Margin="0,539,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="196" FontSize="18"/>
-        <TextBox x:Name="Name" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
+        <Button x:Name="Create" Content="Create" HorizontalAlignment="Center" Margin="0,539,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="57" Width="196" FontSize="18" Command="{Binding CreateSaveCommand, Mode=OneWay}"/>
+        <TextBox x:Name="Name" Text="{Binding TBName, Mode=TwoWay}" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
         <Label Content="Name :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,183,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="104" FontSize="24"/>
         <Label Content="Source file path :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,257,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="212" FontSize="24"/>
-        <TextBox x:Name="Source" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
-        <TextBox x:Name="Dest" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
+        <TextBox x:Name="Source" Text="{Binding TBSource, Mode=TwoWay}" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
+        <TextBox x:Name="Dest" Text="{Binding TBDest, Mode=TwoWay}" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
         <Label Content="Destination file path :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,330,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="240" FontSize="24"/>
         <Label Content="Type :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,404,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="212" FontSize="24"/>
-        <TextBox x:Name="Type" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
-        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="1041,630,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
+        <TextBox x:Name="Type" Text="{Binding TBType, Mode=TwoWay}" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
+        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="1041,630,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18" Command="{Binding CloseCreateuiSaveCommand, Mode=OneWay}"/>
 
     </Grid>
 </Window>

@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "68+HpSph56C8GX+IWdalr0ysHSde688MJdu/d2odCtDRb0u/kVDRA7MetqIjQxjjcbRSwHhVj9zpNXLIQ93HSQ==",
+  "dgSpecHash": "I2+oOOqmJW1tbOsGO6HoJdI7kb6LrEgQMwOSCgXbpyEN7nuj4DnZ2QYNCVJWFY2tC15t0vemkJ8UmlklL538dQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lolah\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lolah\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
-    "C:\\Users\\lolah\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512",
-    "C:\\Users\\lolah\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\lolah\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }
