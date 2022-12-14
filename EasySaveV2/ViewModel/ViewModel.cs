@@ -13,6 +13,12 @@ namespace EasySaveV2.ViewModel
         private string tbSource;
         private string tbDest;
         private string tbType;
+        private string name;
+        private string source;
+        private string type;
+        private string nameSave;
+        private string message;
+        private string tbMessage;
 
         public string TBNameSave
         {
@@ -94,14 +100,91 @@ namespace EasySaveV2.ViewModel
             {
             }
         }
-        public string Name { get; set; }
-        public string Source { get; set; }
-        public string Dest { get; set; }
+        public string Name 
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+                OnPropertyChanged("Name");
+            }
+            }
+        public string Source 
+        {
+            get
+            {
+                return source;
+            }
+            set
+            {
+                source = value;
+                OnPropertyChanged("Source");
+            }
+        }
+        public string dest 
+        {
+            get
+            {
+                return dest;
+            }
+            set
+            {
+                dest = value;
+                OnPropertyChanged("dest");
+            }
+        }
 
-        public string Type { get; set; }
-        public string NameSave { get; set; }
-        public string Message { get;  set; }
-        public string TBmessage { get;  set; }
+        public string Type 
+        {
+            get
+            {
+                return type;
+            }
+            set
+            {
+                type = value;
+                OnPropertyChanged("type");
+            }
+            }
+        public string NameSave 
+        {
+            get
+            {
+                return nameSave;
+            }
+            set
+            {
+                nameSave =value;
+                OnPropertyChanged("nameSave");
+            }
+        }
+        public string Message 
+        {
+            get
+            {
+                return message;
+            }
+            set
+            {
+                message = value;
+                OnPropertyChanged("Message");
+            }
+        }
+        public string TBmessage 
+        {
+            get
+            {
+                return tbMessage;
+            }
+            set
+            {
+                tbMessage = value;
+                OnPropertyChanged("TBMessage");
+            }
+        }
 
 
         #region methods
