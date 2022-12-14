@@ -12,8 +12,13 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\emili\Source\Repos\Projet_Programmation_Systeme\EasySaveV2\App.xaml
 3578882269
 
+<<<<<<< Updated upstream
 122008547540
 1941768670137
+=======
+111300424796
+1931432607592
+>>>>>>> Stashed changes
 MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
 
 False
