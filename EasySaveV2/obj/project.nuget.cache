@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "V4k6OgiUuVfgSe9y7mJ3p0kbJSoBwnIKiWi6TwklCffL27H691R4CfMzoDALulCVcQkE45kyDqPOllS6AbnweQ==",
+  "dgSpecHash": "rbA8phC0htAnpT2L3lIzwxW6QYio5wNaSnxBihG539QzeB4UvUvISE9BEJNJTLM4/FLPasTDxOpukkfVqDB1VA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emili\\Source\\Repos\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
+  "projectFilePath": "C:\\Users\\fclea\\Documents\\CESI\\Projet 2\\Code\\Projet_Programmation_Systeme\\EasySaveV2\\EasySaveV2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emili\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
-    "C:\\Users\\emili\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    "C:\\Users\\fclea\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\fclea\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

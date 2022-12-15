@@ -17,7 +17,6 @@
         <Label Content="Destination file path :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,330,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="240" FontSize="24"/>
         <Label Content="Type :" Foreground="#FFFFFF" HorizontalAlignment="Left" Margin="266,404,0,0" VerticalAlignment="Top" Background="Transparent" Height="39" Width="212" FontSize="24"/>
         <TextBox x:Name="Type" HorizontalAlignment="Left" Foreground="#FFFFFF" Margin="512,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="61" Background="#FF2E333A" BorderBrush="#FF2E333A" FontSize="18"/>
-        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="1041,630,0,0" VerticalAlignment="Top"  Background="#FF2E333A" Foreground="#FFF3F3F3" BorderBrush="#FF2E333A" Height="38" Width="79" FontSize="18"/>
 
     </Grid>
 </Window>

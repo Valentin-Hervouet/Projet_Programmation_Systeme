@@ -22,7 +22,6 @@ namespace EasySaveV2
         public uiCreateSave()
         {
             InitializeComponent();
-            Close.Click += new RoutedEventHandler(CloseCreate);
             Create.Click += new RoutedEventHandler(Createsave);
         }
         private void CloseCreate(object sender, RoutedEventArgs e)
