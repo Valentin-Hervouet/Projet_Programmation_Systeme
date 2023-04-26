@@ -25,3 +25,4 @@ C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoS
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.dll
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.pdb
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.genruntimeconfig.cache
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\CryptoSoftt\obj\Debug\netcoreapp3.1\CryptoSoftt.csproj.AssemblyReference.cache
