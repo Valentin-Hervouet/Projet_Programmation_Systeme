@@ -4,23 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\lolah\Kraken\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\
 EasySaveV2
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-C:\Users\lolah\Kraken\Projet_Programmation_Systeme\EasySaveV2\App.xaml
-4-985138487
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\App.xaml
+4-420849681
 
-<<<<<<< HEAD
-20-518943584
-194-351084670
-Lang.xaml;MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
-=======
-19511784615
+20-1149601505
 19499066748
-MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
->>>>>>> master
+Lang.xaml;MainWindow.xaml;uiCreateSave.xaml;uiSave.xaml;
 
 False
 

@@ -22,6 +22,16 @@ namespace EasySaveV2.Model
 
         }
 
+        public long Size(string name)
+        {
+
+            var _instance = Model.StateLog.GetInstance();
+            Statelogsave save = _instance.OpenSaveStateJSON(name);
+            string path = save.SourceFilePath;
+            FileInfo fileInfo = new FileInfo(path);
+            return fileInfo.Length; // in bytes
+
+        }
 
         public string SaveAll()
         {

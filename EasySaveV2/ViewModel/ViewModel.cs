@@ -248,7 +248,6 @@ clear -- Clear console
 exit -- exit program";
             Message = TBmessage;
         }
-<<<<<<< HEAD
         public static void CloseCreate()
         {
             // Code à exécuter lorsque l'événement click est déclenché
@@ -267,8 +266,7 @@ exit -- exit program";
         {
             LangueLangue = "fr";
         }
-=======
->>>>>>> master
+
         #endregion
 
         #region commands
@@ -339,7 +337,6 @@ exit -- exit program";
                 return new RelayCommand(HelpMessage);
             }
         }
-<<<<<<< HEAD
 
         public ICommand CloseCreateCommand
         {
@@ -373,8 +370,6 @@ exit -- exit program";
             }
         }
 
-=======
->>>>>>> master
         #endregion
     }
 }

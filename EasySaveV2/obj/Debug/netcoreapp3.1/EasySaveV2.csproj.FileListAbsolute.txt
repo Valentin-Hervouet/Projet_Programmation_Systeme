@@ -64,13 +64,6 @@ C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySav
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2.csproj.AssemblyReference.cache
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.g.cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiSave.g.cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2_MarkupCompile.cache
-C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\EasySaveV2_MarkupCompile.lref
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiCreateSave.baml
 C:\Users\fclea\Documents\CESI\Projet 2\Code\Projet_Programmation_Systeme\EasySaveV2\obj\Debug\netcoreapp3.1\uiSave.baml

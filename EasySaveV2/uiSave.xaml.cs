@@ -21,7 +21,6 @@ namespace EasySaveV2
         public uiSave()
         {
             InitializeComponent();
-            Close.Click += new RoutedEventHandler(CloseSave);
             SaveOne.Click += new RoutedEventHandler(Saveone);
             SaveAll.Click += new RoutedEventHandler(Saveall);
         }
@@ -35,9 +34,19 @@ namespace EasySaveV2
         public void Saveone(object sender, RoutedEventArgs e)
         {
             TBNameSave = NameSave.Text;
+            long maxFileSize = 10 * 1024 * 1024; // 10 megabytes
             //Appel de la View Model en Save One en passant TBNameSave en argument
             Model.Saving save = new Model.Saving();
-            MessageBox.Show(save.Save(TBNameSave));
+            long Size = save.Size(TBNameSave);
+            if (Size > maxFileSize)
+            {
+                MessageBox.Show("Your file size is too large. You can't exceed 10Mb");
+            }
+            else
+            {
+                MessageBox.Show(save.Save(TBNameSave));
+            }
+            
             
         }
         public void Saveall(object sender, RoutedEventArgs e)
